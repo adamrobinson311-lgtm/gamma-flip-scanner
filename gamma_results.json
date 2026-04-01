@@ -1,0 +1,6552 @@
+{
+  "generated": "2026-04-01T00:22:06",
+  "spy_price": 650.3400268554688,
+  "total_scanned": 50,
+  "successful": 50,
+  "results": [
+    {
+      "ticker": "TMO",
+      "price": 491.53,
+      "gamma_flip": 490.5,
+      "net_gamma": -9295371.0,
+      "distance_pct": 0.21,
+      "above_flip": true,
+      "sector": "Healthcare",
+      "market_cap": 182595649536,
+      "gamma_profile": [
+        {
+          "strike": 420.0,
+          "net_gamma_exp": -1035040.76
+        },
+        {
+          "strike": 425.0,
+          "net_gamma_exp": -6354.96
+        },
+        {
+          "strike": 430.0,
+          "net_gamma_exp": -59619.369999999995
+        },
+        {
+          "strike": 440.0,
+          "net_gamma_exp": -55982.25
+        },
+        {
+          "strike": 450.0,
+          "net_gamma_exp": -220146.87
+        },
+        {
+          "strike": 455.0,
+          "net_gamma_exp": -18561.88
+        },
+        {
+          "strike": 457.5,
+          "net_gamma_exp": -14192.2
+        },
+        {
+          "strike": 460.0,
+          "net_gamma_exp": -1708950.61
+        },
+        {
+          "strike": 465.0,
+          "net_gamma_exp": -3394.71
+        },
+        {
+          "strike": 470.0,
+          "net_gamma_exp": -768267.67
+        },
+        {
+          "strike": 472.5,
+          "net_gamma_exp": -24836.43
+        },
+        {
+          "strike": 475.0,
+          "net_gamma_exp": 289921.51999999996
+        },
+        {
+          "strike": 477.5,
+          "net_gamma_exp": -1872.79
+        },
+        {
+          "strike": 480.0,
+          "net_gamma_exp": -1479121.72
+        },
+        {
+          "strike": 482.5,
+          "net_gamma_exp": 6873.149999999994
+        },
+        {
+          "strike": 485.0,
+          "net_gamma_exp": 365157.04000000004
+        },
+        {
+          "strike": 487.5,
+          "net_gamma_exp": -2749924.8
+        },
+        {
+          "strike": 490.0,
+          "net_gamma_exp": -3108563.2699999996
+        },
+        {
+          "strike": 492.5,
+          "net_gamma_exp": -112244.24
+        },
+        {
+          "strike": 495.0,
+          "net_gamma_exp": 95337.07999999999
+        },
+        {
+          "strike": 497.5,
+          "net_gamma_exp": 71272.19
+        },
+        {
+          "strike": 500.0,
+          "net_gamma_exp": -735038.2000000001
+        },
+        {
+          "strike": 505.0,
+          "net_gamma_exp": 86143.36
+        },
+        {
+          "strike": 510.0,
+          "net_gamma_exp": 943474.15
+        },
+        {
+          "strike": 515.0,
+          "net_gamma_exp": 243520.57
+        },
+        {
+          "strike": 520.0,
+          "net_gamma_exp": 307795.8
+        },
+        {
+          "strike": 525.0,
+          "net_gamma_exp": 6134.31
+        },
+        {
+          "strike": 530.0,
+          "net_gamma_exp": 446853.32999999996
+        },
+        {
+          "strike": 540.0,
+          "net_gamma_exp": 553002.92
+        },
+        {
+          "strike": 550.0,
+          "net_gamma_exp": 307172.17000000004
+        },
+        {
+          "strike": 560.0,
+          "net_gamma_exp": 217480.84
+        }
+      ]
+    },
+    {
+      "ticker": "NKE",
+      "price": 52.82,
+      "gamma_flip": 52.7,
+      "net_gamma": -4967128.0,
+      "distance_pct": 0.23,
+      "above_flip": true,
+      "sector": "Consumer Cyclical",
+      "market_cap": 78193852416,
+      "gamma_profile": [
+        {
+          "strike": 45.0,
+          "net_gamma_exp": -278691.82999999996
+        },
+        {
+          "strike": 45.5,
+          "net_gamma_exp": -4471.66
+        },
+        {
+          "strike": 46.0,
+          "net_gamma_exp": -57979.29
+        },
+        {
+          "strike": 46.5,
+          "net_gamma_exp": -27039.24
+        },
+        {
+          "strike": 47.0,
+          "net_gamma_exp": -205561.21
+        },
+        {
+          "strike": 47.5,
+          "net_gamma_exp": -438005.57999999996
+        },
+        {
+          "strike": 48.0,
+          "net_gamma_exp": -260547.18
+        },
+        {
+          "strike": 48.5,
+          "net_gamma_exp": -87303.40000000001
+        },
+        {
+          "strike": 49.0,
+          "net_gamma_exp": -433886.24
+        },
+        {
+          "strike": 49.5,
+          "net_gamma_exp": -124651.24
+        },
+        {
+          "strike": 50.0,
+          "net_gamma_exp": -2307350.4299999997
+        },
+        {
+          "strike": 51.0,
+          "net_gamma_exp": -475315.78
+        },
+        {
+          "strike": 52.0,
+          "net_gamma_exp": 400512.3
+        },
+        {
+          "strike": 52.5,
+          "net_gamma_exp": -1327524.3599999999
+        },
+        {
+          "strike": 53.0,
+          "net_gamma_exp": 52572.22000000007
+        },
+        {
+          "strike": 54.0,
+          "net_gamma_exp": 1411101.1
+        },
+        {
+          "strike": 55.0,
+          "net_gamma_exp": -2530180.2
+        },
+        {
+          "strike": 56.0,
+          "net_gamma_exp": 312089.41
+        },
+        {
+          "strike": 57.0,
+          "net_gamma_exp": 600336.01
+        },
+        {
+          "strike": 57.5,
+          "net_gamma_exp": -2694428.53
+        },
+        {
+          "strike": 58.0,
+          "net_gamma_exp": 431131.07
+        },
+        {
+          "strike": 59.0,
+          "net_gamma_exp": 556398.0399999999
+        },
+        {
+          "strike": 60.0,
+          "net_gamma_exp": 1196098.23
+        }
+      ]
+    },
+    {
+      "ticker": "CRM",
+      "price": 186.67,
+      "gamma_flip": 180.07,
+      "net_gamma": -10434480.0,
+      "distance_pct": 3.54,
+      "above_flip": true,
+      "sector": "Technology",
+      "market_cap": 174909784064,
+      "gamma_profile": [
+        {
+          "strike": 160.0,
+          "net_gamma_exp": -848761.3300000001
+        },
+        {
+          "strike": 162.5,
+          "net_gamma_exp": -155488.04
+        },
+        {
+          "strike": 165.0,
+          "net_gamma_exp": -990280.36
+        },
+        {
+          "strike": 167.5,
+          "net_gamma_exp": -54506.78999999999
+        },
+        {
+          "strike": 170.0,
+          "net_gamma_exp": -2786063.04
+        },
+        {
+          "strike": 172.5,
+          "net_gamma_exp": -249869.87
+        },
+        {
+          "strike": 175.0,
+          "net_gamma_exp": -3347487.02
+        },
+        {
+          "strike": 177.5,
+          "net_gamma_exp": -734099.98
+        },
+        {
+          "strike": 180.0,
+          "net_gamma_exp": -6800074.609999999
+        },
+        {
+          "strike": 182.5,
+          "net_gamma_exp": -2481870.18
+        },
+        {
+          "strike": 185.0,
+          "net_gamma_exp": -4571118.87
+        },
+        {
+          "strike": 187.5,
+          "net_gamma_exp": 1394023.3900000001
+        },
+        {
+          "strike": 190.0,
+          "net_gamma_exp": -4773958.66
+        },
+        {
+          "strike": 192.5,
+          "net_gamma_exp": 1651065.75
+        },
+        {
+          "strike": 195.0,
+          "net_gamma_exp": 338601.9500000001
+        },
+        {
+          "strike": 197.5,
+          "net_gamma_exp": 212840.83999999997
+        },
+        {
+          "strike": 200.0,
+          "net_gamma_exp": 4336504.73
+        },
+        {
+          "strike": 202.5,
+          "net_gamma_exp": 458990.07
+        },
+        {
+          "strike": 205.0,
+          "net_gamma_exp": 1609475.8399999999
+        },
+        {
+          "strike": 207.5,
+          "net_gamma_exp": 69540.84
+        },
+        {
+          "strike": 210.0,
+          "net_gamma_exp": 3856286.84
+        },
+        {
+          "strike": 212.5,
+          "net_gamma_exp": 24864.86
+        }
+      ]
+    },
+    {
+      "ticker": "MCD",
+      "price": 310.79,
+      "gamma_flip": 291.0,
+      "net_gamma": -3602877.0,
+      "distance_pct": 6.37,
+      "above_flip": true,
+      "sector": "Consumer Cyclical",
+      "market_cap": 221781114880,
+      "gamma_profile": [
+        {
+          "strike": 265.0,
+          "net_gamma_exp": -50467.75
+        },
+        {
+          "strike": 270.0,
+          "net_gamma_exp": -196622.93
+        },
+        {
+          "strike": 275.0,
+          "net_gamma_exp": -891359.86
+        },
+        {
+          "strike": 277.5,
+          "net_gamma_exp": -4102.14
+        },
+        {
+          "strike": 280.0,
+          "net_gamma_exp": -816895.74
+        },
+        {
+          "strike": 282.5,
+          "net_gamma_exp": -25278.96
+        },
+        {
+          "strike": 285.0,
+          "net_gamma_exp": -565868.0
+        },
+        {
+          "strike": 287.5,
+          "net_gamma_exp": -18501.16
+        },
+        {
+          "strike": 290.0,
+          "net_gamma_exp": -1710727.96
+        },
+        {
+          "strike": 292.5,
+          "net_gamma_exp": -15505.19
+        },
+        {
+          "strike": 295.0,
+          "net_gamma_exp": -1950620.16
+        },
+        {
+          "strike": 297.5,
+          "net_gamma_exp": -327664.39
+        },
+        {
+          "strike": 300.0,
+          "net_gamma_exp": -3020271.56
+        },
+        {
+          "strike": 302.5,
+          "net_gamma_exp": -438295.72
+        },
+        {
+          "strike": 305.0,
+          "net_gamma_exp": -1407308.2300000002
+        },
+        {
+          "strike": 307.5,
+          "net_gamma_exp": -44423.54999999999
+        },
+        {
+          "strike": 310.0,
+          "net_gamma_exp": -4768601.58
+        },
+        {
+          "strike": 312.5,
+          "net_gamma_exp": 1795551.23
+        },
+        {
+          "strike": 315.0,
+          "net_gamma_exp": -2370794.45
+        },
+        {
+          "strike": 317.5,
+          "net_gamma_exp": 698467.71
+        },
+        {
+          "strike": 320.0,
+          "net_gamma_exp": 201540.94999999998
+        },
+        {
+          "strike": 322.5,
+          "net_gamma_exp": 393280.83
+        },
+        {
+          "strike": 325.0,
+          "net_gamma_exp": 2783311.6100000003
+        },
+        {
+          "strike": 327.5,
+          "net_gamma_exp": 184027.43
+        },
+        {
+          "strike": 330.0,
+          "net_gamma_exp": 2639711.55
+        },
+        {
+          "strike": 332.5,
+          "net_gamma_exp": 31988.58
+        },
+        {
+          "strike": 335.0,
+          "net_gamma_exp": 1311414.51
+        },
+        {
+          "strike": 337.5,
+          "net_gamma_exp": 482.97
+        },
+        {
+          "strike": 340.0,
+          "net_gamma_exp": 2792465.41
+        },
+        {
+          "strike": 345.0,
+          "net_gamma_exp": 744755.82
+        },
+        {
+          "strike": 350.0,
+          "net_gamma_exp": 945048.77
+        },
+        {
+          "strike": 355.0,
+          "net_gamma_exp": 262934.07
+        }
+      ]
+    },
+    {
+      "ticker": "LIN",
+      "price": 495.76,
+      "gamma_flip": 460.23,
+      "net_gamma": -2156093.0,
+      "distance_pct": 7.17,
+      "above_flip": true,
+      "sector": "Basic Materials",
+      "market_cap": 229732286464,
+      "gamma_profile": [
+        {
+          "strike": 425.0,
+          "net_gamma_exp": -229217.8
+        },
+        {
+          "strike": 430.0,
+          "net_gamma_exp": -237295.89
+        },
+        {
+          "strike": 435.0,
+          "net_gamma_exp": -87795.48999999999
+        },
+        {
+          "strike": 440.0,
+          "net_gamma_exp": -56836.57000000001
+        },
+        {
+          "strike": 445.0,
+          "net_gamma_exp": 137256.91999999998
+        },
+        {
+          "strike": 450.0,
+          "net_gamma_exp": -1012744.22
+        },
+        {
+          "strike": 455.0,
+          "net_gamma_exp": -128854.66
+        },
+        {
+          "strike": 460.0,
+          "net_gamma_exp": -2936542.1599999997
+        },
+        {
+          "strike": 465.0,
+          "net_gamma_exp": -550192.41
+        },
+        {
+          "strike": 470.0,
+          "net_gamma_exp": 26316.520000000004
+        },
+        {
+          "strike": 475.0,
+          "net_gamma_exp": -110125.04000000001
+        },
+        {
+          "strike": 480.0,
+          "net_gamma_exp": -1210852.99
+        },
+        {
+          "strike": 485.0,
+          "net_gamma_exp": 723898.18
+        },
+        {
+          "strike": 490.0,
+          "net_gamma_exp": -3013511.0100000002
+        },
+        {
+          "strike": 495.0,
+          "net_gamma_exp": -3687479.0
+        },
+        {
+          "strike": 500.0,
+          "net_gamma_exp": 946464.2700000001
+        },
+        {
+          "strike": 505.0,
+          "net_gamma_exp": 1883127.5999999999
+        },
+        {
+          "strike": 510.0,
+          "net_gamma_exp": 2407824.23
+        },
+        {
+          "strike": 515.0,
+          "net_gamma_exp": 1357914.5299999998
+        },
+        {
+          "strike": 520.0,
+          "net_gamma_exp": 1923528.44
+        },
+        {
+          "strike": 525.0,
+          "net_gamma_exp": 1027788.56
+        },
+        {
+          "strike": 530.0,
+          "net_gamma_exp": 378914.18
+        },
+        {
+          "strike": 535.0,
+          "net_gamma_exp": 125121.95
+        },
+        {
+          "strike": 540.0,
+          "net_gamma_exp": 90314.19
+        },
+        {
+          "strike": 545.0,
+          "net_gamma_exp": 78089.51
+        },
+        {
+          "strike": 550.0,
+          "net_gamma_exp": 329594.11000000004
+        },
+        {
+          "strike": 555.0,
+          "net_gamma_exp": 45821.74
+        },
+        {
+          "strike": 560.0,
+          "net_gamma_exp": 28548.74
+        }
+      ]
+    },
+    {
+      "ticker": "LLY",
+      "price": 919.77,
+      "gamma_flip": 843.26,
+      "net_gamma": -21067699.0,
+      "distance_pct": 8.32,
+      "above_flip": true,
+      "sector": "Healthcare",
+      "market_cap": 823211393024,
+      "gamma_profile": [
+        {
+          "strike": 900.0,
+          "net_gamma_exp": -9323382.4
+        },
+        {
+          "strike": 905.0,
+          "net_gamma_exp": -199064.62000000002
+        },
+        {
+          "strike": 907.5,
+          "net_gamma_exp": -134917.76
+        },
+        {
+          "strike": 910.0,
+          "net_gamma_exp": -7294365.91
+        },
+        {
+          "strike": 912.5,
+          "net_gamma_exp": 605973.32
+        },
+        {
+          "strike": 915.0,
+          "net_gamma_exp": 2390140.6
+        },
+        {
+          "strike": 917.5,
+          "net_gamma_exp": 272237.22
+        },
+        {
+          "strike": 920.0,
+          "net_gamma_exp": -745306.5000000002
+        },
+        {
+          "strike": 922.5,
+          "net_gamma_exp": 753282.48
+        },
+        {
+          "strike": 925.0,
+          "net_gamma_exp": 8533191.18
+        },
+        {
+          "strike": 927.5,
+          "net_gamma_exp": 1158300.78
+        },
+        {
+          "strike": 930.0,
+          "net_gamma_exp": 5367227.600000001
+        },
+        {
+          "strike": 935.0,
+          "net_gamma_exp": 2151023.4
+        },
+        {
+          "strike": 940.0,
+          "net_gamma_exp": -661398.6500000001
+        },
+        {
+          "strike": 945.0,
+          "net_gamma_exp": 1086918.19
+        },
+        {
+          "strike": 950.0,
+          "net_gamma_exp": 3909286.0500000003
+        },
+        {
+          "strike": 955.0,
+          "net_gamma_exp": -30749.500000000015
+        },
+        {
+          "strike": 960.0,
+          "net_gamma_exp": 3380721.97
+        },
+        {
+          "strike": 965.0,
+          "net_gamma_exp": 508636.58
+        },
+        {
+          "strike": 970.0,
+          "net_gamma_exp": 473464.03
+        },
+        {
+          "strike": 975.0,
+          "net_gamma_exp": 283413.4
+        },
+        {
+          "strike": 980.0,
+          "net_gamma_exp": 936141.14
+        },
+        {
+          "strike": 985.0,
+          "net_gamma_exp": -1382907.13
+        },
+        {
+          "strike": 987.5,
+          "net_gamma_exp": 16261.92
+        },
+        {
+          "strike": 990.0,
+          "net_gamma_exp": 1852113.9300000002
+        },
+        {
+          "strike": 992.5,
+          "net_gamma_exp": 5165.12
+        },
+        {
+          "strike": 995.0,
+          "net_gamma_exp": 161080.69
+        },
+        {
+          "strike": 997.5,
+          "net_gamma_exp": 8051.55
+        },
+        {
+          "strike": 1000.0,
+          "net_gamma_exp": 3418385.2199999997
+        },
+        {
+          "strike": 1005.0,
+          "net_gamma_exp": 141866.97
+        },
+        {
+          "strike": 1010.0,
+          "net_gamma_exp": 784106.04
+        },
+        {
+          "strike": 1015.0,
+          "net_gamma_exp": 82480.11
+        },
+        {
+          "strike": 1020.0,
+          "net_gamma_exp": 820167.66
+        },
+        {
+          "strike": 1025.0,
+          "net_gamma_exp": 62592.159999999996
+        },
+        {
+          "strike": 1030.0,
+          "net_gamma_exp": 114637.62
+        },
+        {
+          "strike": 1035.0,
+          "net_gamma_exp": 14284.31
+        },
+        {
+          "strike": 1040.0,
+          "net_gamma_exp": 1206099.03
+        },
+        {
+          "strike": 1045.0,
+          "net_gamma_exp": 10277.929999999998
+        },
+        {
+          "strike": 1050.0,
+          "net_gamma_exp": 894873.84
+        },
+        {
+          "strike": 1055.0,
+          "net_gamma_exp": 12467.56
+        }
+      ]
+    },
+    {
+      "ticker": "HD",
+      "price": 328.89,
+      "gamma_flip": 291.24,
+      "net_gamma": -1785705.0,
+      "distance_pct": 11.45,
+      "above_flip": true,
+      "sector": "Consumer Cyclical",
+      "market_cap": 327578222592,
+      "gamma_profile": [
+        {
+          "strike": 280.0,
+          "net_gamma_exp": -501242.08999999997
+        },
+        {
+          "strike": 285.0,
+          "net_gamma_exp": -342802.43000000005
+        },
+        {
+          "strike": 287.5,
+          "net_gamma_exp": -209.11
+        },
+        {
+          "strike": 290.0,
+          "net_gamma_exp": -554778.1
+        },
+        {
+          "strike": 292.5,
+          "net_gamma_exp": -20.63
+        },
+        {
+          "strike": 295.0,
+          "net_gamma_exp": -398821.64
+        },
+        {
+          "strike": 297.5,
+          "net_gamma_exp": -288.77
+        },
+        {
+          "strike": 300.0,
+          "net_gamma_exp": -3826114.02
+        },
+        {
+          "strike": 302.5,
+          "net_gamma_exp": -3811.44
+        },
+        {
+          "strike": 305.0,
+          "net_gamma_exp": -778637.86
+        },
+        {
+          "strike": 307.5,
+          "net_gamma_exp": -119664.92
+        },
+        {
+          "strike": 310.0,
+          "net_gamma_exp": -2293333.42
+        },
+        {
+          "strike": 312.5,
+          "net_gamma_exp": -119502.84
+        },
+        {
+          "strike": 315.0,
+          "net_gamma_exp": -6278280.4
+        },
+        {
+          "strike": 317.5,
+          "net_gamma_exp": -1428517.34
+        },
+        {
+          "strike": 320.0,
+          "net_gamma_exp": -4751189.82
+        },
+        {
+          "strike": 322.5,
+          "net_gamma_exp": 79980.43
+        },
+        {
+          "strike": 325.0,
+          "net_gamma_exp": -3384407.51
+        },
+        {
+          "strike": 327.5,
+          "net_gamma_exp": 815340.14
+        },
+        {
+          "strike": 330.0,
+          "net_gamma_exp": -530573.1099999999
+        },
+        {
+          "strike": 332.5,
+          "net_gamma_exp": 448710.89999999997
+        },
+        {
+          "strike": 335.0,
+          "net_gamma_exp": 1861339.51
+        },
+        {
+          "strike": 337.5,
+          "net_gamma_exp": 496689.18
+        },
+        {
+          "strike": 340.0,
+          "net_gamma_exp": 664900.19
+        },
+        {
+          "strike": 342.5,
+          "net_gamma_exp": 213813.48
+        },
+        {
+          "strike": 345.0,
+          "net_gamma_exp": -44679.140000000014
+        },
+        {
+          "strike": 347.5,
+          "net_gamma_exp": 1666575.1
+        },
+        {
+          "strike": 350.0,
+          "net_gamma_exp": 11114360.15
+        },
+        {
+          "strike": 352.5,
+          "net_gamma_exp": 9796.82
+        },
+        {
+          "strike": 355.0,
+          "net_gamma_exp": 489203.91
+        },
+        {
+          "strike": 357.5,
+          "net_gamma_exp": 1993.4
+        },
+        {
+          "strike": 360.0,
+          "net_gamma_exp": 145785.02999999997
+        },
+        {
+          "strike": 362.5,
+          "net_gamma_exp": 11493.23
+        },
+        {
+          "strike": 365.0,
+          "net_gamma_exp": 165031.42000000004
+        },
+        {
+          "strike": 370.0,
+          "net_gamma_exp": 686071.15
+        },
+        {
+          "strike": 375.0,
+          "net_gamma_exp": 3271622.83
+        }
+      ]
+    },
+    {
+      "ticker": "RTX",
+      "price": 192.9,
+      "gamma_flip": 170.81,
+      "net_gamma": -2178736.0,
+      "distance_pct": 11.45,
+      "above_flip": true,
+      "sector": "Industrials",
+      "market_cap": 259638427648,
+      "gamma_profile": [
+        {
+          "strike": 165.0,
+          "net_gamma_exp": -312165.3
+        },
+        {
+          "strike": 170.0,
+          "net_gamma_exp": -1266002.94
+        },
+        {
+          "strike": 172.5,
+          "net_gamma_exp": -32993.759999999995
+        },
+        {
+          "strike": 175.0,
+          "net_gamma_exp": -3913094.22
+        },
+        {
+          "strike": 177.5,
+          "net_gamma_exp": -65644.57
+        },
+        {
+          "strike": 180.0,
+          "net_gamma_exp": -4213497.08
+        },
+        {
+          "strike": 182.5,
+          "net_gamma_exp": -269258.14
+        },
+        {
+          "strike": 185.0,
+          "net_gamma_exp": -1170255.21
+        },
+        {
+          "strike": 187.5,
+          "net_gamma_exp": -580193.04
+        },
+        {
+          "strike": 190.0,
+          "net_gamma_exp": -2698350.4299999997
+        },
+        {
+          "strike": 192.5,
+          "net_gamma_exp": 412658.65
+        },
+        {
+          "strike": 195.0,
+          "net_gamma_exp": -1487261.32
+        },
+        {
+          "strike": 197.5,
+          "net_gamma_exp": 977088.8999999999
+        },
+        {
+          "strike": 200.0,
+          "net_gamma_exp": 1717961.21
+        },
+        {
+          "strike": 202.5,
+          "net_gamma_exp": 136111.08000000002
+        },
+        {
+          "strike": 205.0,
+          "net_gamma_exp": 229325.53999999995
+        },
+        {
+          "strike": 207.5,
+          "net_gamma_exp": 44762.299999999996
+        },
+        {
+          "strike": 210.0,
+          "net_gamma_exp": 3257696.0999999996
+        },
+        {
+          "strike": 212.5,
+          "net_gamma_exp": 18517.15
+        },
+        {
+          "strike": 215.0,
+          "net_gamma_exp": 501852.58999999997
+        },
+        {
+          "strike": 217.5,
+          "net_gamma_exp": 1525.26
+        },
+        {
+          "strike": 220.0,
+          "net_gamma_exp": 4016384.9699999997
+        }
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "price": 309.51,
+      "gamma_flip": 270.91,
+      "net_gamma": -20021717.0,
+      "distance_pct": 12.47,
+      "above_flip": true,
+      "sector": "Technology",
+      "market_cap": 1467471626240,
+      "gamma_profile": [
+        {
+          "strike": 265.0,
+          "net_gamma_exp": -1161000.88
+        },
+        {
+          "strike": 267.5,
+          "net_gamma_exp": -52466.880000000005
+        },
+        {
+          "strike": 270.0,
+          "net_gamma_exp": -6956322.9
+        },
+        {
+          "strike": 272.5,
+          "net_gamma_exp": -110126.29000000001
+        },
+        {
+          "strike": 275.0,
+          "net_gamma_exp": -505546.92
+        },
+        {
+          "strike": 277.5,
+          "net_gamma_exp": -33823.55
+        },
+        {
+          "strike": 280.0,
+          "net_gamma_exp": -9853542.879999999
+        },
+        {
+          "strike": 282.5,
+          "net_gamma_exp": -92867.3
+        },
+        {
+          "strike": 285.0,
+          "net_gamma_exp": -4307013.529999999
+        },
+        {
+          "strike": 287.5,
+          "net_gamma_exp": -1386331.72
+        },
+        {
+          "strike": 290.0,
+          "net_gamma_exp": -14368337.28
+        },
+        {
+          "strike": 292.5,
+          "net_gamma_exp": -762678.9400000001
+        },
+        {
+          "strike": 295.0,
+          "net_gamma_exp": -3403237.66
+        },
+        {
+          "strike": 297.5,
+          "net_gamma_exp": -1857545.26
+        },
+        {
+          "strike": 300.0,
+          "net_gamma_exp": -18991162.03
+        },
+        {
+          "strike": 302.5,
+          "net_gamma_exp": -876535.9199999999
+        },
+        {
+          "strike": 305.0,
+          "net_gamma_exp": 2871172.13
+        },
+        {
+          "strike": 307.5,
+          "net_gamma_exp": -2706431.97
+        },
+        {
+          "strike": 310.0,
+          "net_gamma_exp": -4997847.75
+        },
+        {
+          "strike": 312.5,
+          "net_gamma_exp": 847792.38
+        },
+        {
+          "strike": 315.0,
+          "net_gamma_exp": 1965032.26
+        },
+        {
+          "strike": 317.5,
+          "net_gamma_exp": 6039369.01
+        },
+        {
+          "strike": 320.0,
+          "net_gamma_exp": 6521471.57
+        },
+        {
+          "strike": 322.5,
+          "net_gamma_exp": 853039.6300000001
+        },
+        {
+          "strike": 325.0,
+          "net_gamma_exp": 5385836.2
+        },
+        {
+          "strike": 327.5,
+          "net_gamma_exp": 1094604.31
+        },
+        {
+          "strike": 330.0,
+          "net_gamma_exp": 4135138.95
+        },
+        {
+          "strike": 332.5,
+          "net_gamma_exp": 408946.93
+        },
+        {
+          "strike": 335.0,
+          "net_gamma_exp": 4296352.5600000005
+        },
+        {
+          "strike": 337.5,
+          "net_gamma_exp": 316802.01
+        },
+        {
+          "strike": 340.0,
+          "net_gamma_exp": 6578323.65
+        },
+        {
+          "strike": 342.5,
+          "net_gamma_exp": 141759.05
+        },
+        {
+          "strike": 345.0,
+          "net_gamma_exp": 764897.91
+        },
+        {
+          "strike": 347.5,
+          "net_gamma_exp": 3098.78
+        },
+        {
+          "strike": 350.0,
+          "net_gamma_exp": 7098571.5600000005
+        },
+        {
+          "strike": 352.5,
+          "net_gamma_exp": 9693.33
+        },
+        {
+          "strike": 355.0,
+          "net_gamma_exp": 510942.81
+        }
+      ]
+    },
+    {
+      "ticker": "ACN",
+      "price": 198.29,
+      "gamma_flip": 234.18,
+      "net_gamma": 8748748.0,
+      "distance_pct": -18.1,
+      "above_flip": false,
+      "sector": "Technology",
+      "market_cap": 122034626560,
+      "gamma_profile": [
+        {
+          "strike": 170.0,
+          "net_gamma_exp": -443352.85
+        },
+        {
+          "strike": 172.5,
+          "net_gamma_exp": -5174.44
+        },
+        {
+          "strike": 175.0,
+          "net_gamma_exp": -237389.5
+        },
+        {
+          "strike": 177.5,
+          "net_gamma_exp": -6947.92
+        },
+        {
+          "strike": 180.0,
+          "net_gamma_exp": -393474.79
+        },
+        {
+          "strike": 182.5,
+          "net_gamma_exp": -43067.14
+        },
+        {
+          "strike": 185.0,
+          "net_gamma_exp": 116744.99999999997
+        },
+        {
+          "strike": 187.5,
+          "net_gamma_exp": -70929.79
+        },
+        {
+          "strike": 190.0,
+          "net_gamma_exp": 1274934.16
+        },
+        {
+          "strike": 192.5,
+          "net_gamma_exp": -112917.55000000002
+        },
+        {
+          "strike": 195.0,
+          "net_gamma_exp": 530491.74
+        },
+        {
+          "strike": 197.5,
+          "net_gamma_exp": 13413.09
+        },
+        {
+          "strike": 200.0,
+          "net_gamma_exp": 2168729.87
+        },
+        {
+          "strike": 202.5,
+          "net_gamma_exp": 2629536.29
+        },
+        {
+          "strike": 205.0,
+          "net_gamma_exp": 654475.63
+        },
+        {
+          "strike": 207.5,
+          "net_gamma_exp": 569112.9199999999
+        },
+        {
+          "strike": 210.0,
+          "net_gamma_exp": 903852.2
+        },
+        {
+          "strike": 212.5,
+          "net_gamma_exp": 33333.47
+        },
+        {
+          "strike": 215.0,
+          "net_gamma_exp": 323141.03
+        },
+        {
+          "strike": 217.5,
+          "net_gamma_exp": 84898.58
+        },
+        {
+          "strike": 220.0,
+          "net_gamma_exp": 300176.68000000005
+        },
+        {
+          "strike": 222.5,
+          "net_gamma_exp": 10421.65
+        },
+        {
+          "strike": 225.0,
+          "net_gamma_exp": 386643.20999999996
+        }
+      ]
+    },
+    {
+      "ticker": "QCOM",
+      "price": 128.78,
+      "gamma_flip": 104.68,
+      "net_gamma": -228424.0,
+      "distance_pct": 18.71,
+      "above_flip": true,
+      "sector": "Technology",
+      "market_cap": 137542844416,
+      "gamma_profile": [
+        {
+          "strike": 110.0,
+          "net_gamma_exp": -428117.05
+        },
+        {
+          "strike": 111.0,
+          "net_gamma_exp": -53.5
+        },
+        {
+          "strike": 112.0,
+          "net_gamma_exp": -23.52
+        },
+        {
+          "strike": 113.0,
+          "net_gamma_exp": -70.07
+        },
+        {
+          "strike": 114.0,
+          "net_gamma_exp": -502.92
+        },
+        {
+          "strike": 115.0,
+          "net_gamma_exp": -1018968.06
+        },
+        {
+          "strike": 117.0,
+          "net_gamma_exp": -38977.51
+        },
+        {
+          "strike": 118.0,
+          "net_gamma_exp": -15722.99
+        },
+        {
+          "strike": 119.0,
+          "net_gamma_exp": -2413.72
+        },
+        {
+          "strike": 120.0,
+          "net_gamma_exp": -1677383.19
+        },
+        {
+          "strike": 121.0,
+          "net_gamma_exp": -247975.78999999998
+        },
+        {
+          "strike": 122.0,
+          "net_gamma_exp": -83981.88
+        },
+        {
+          "strike": 123.0,
+          "net_gamma_exp": -146824.94999999998
+        },
+        {
+          "strike": 124.0,
+          "net_gamma_exp": -169381.31
+        },
+        {
+          "strike": 125.0,
+          "net_gamma_exp": -2792411.98
+        },
+        {
+          "strike": 126.0,
+          "net_gamma_exp": -255363.84
+        },
+        {
+          "strike": 127.0,
+          "net_gamma_exp": -290996.95
+        },
+        {
+          "strike": 128.0,
+          "net_gamma_exp": -1107135.9700000002
+        },
+        {
+          "strike": 129.0,
+          "net_gamma_exp": 26255.47
+        },
+        {
+          "strike": 130.0,
+          "net_gamma_exp": 576292.8900000001
+        },
+        {
+          "strike": 131.0,
+          "net_gamma_exp": 951533.0299999999
+        },
+        {
+          "strike": 132.0,
+          "net_gamma_exp": 665935.6599999999
+        },
+        {
+          "strike": 133.0,
+          "net_gamma_exp": 1791058.19
+        },
+        {
+          "strike": 134.0,
+          "net_gamma_exp": 248884.77
+        },
+        {
+          "strike": 135.0,
+          "net_gamma_exp": 100.36000000010245
+        },
+        {
+          "strike": 136.0,
+          "net_gamma_exp": 160876.34
+        },
+        {
+          "strike": 137.0,
+          "net_gamma_exp": 65195.67
+        },
+        {
+          "strike": 138.0,
+          "net_gamma_exp": 81772.45
+        },
+        {
+          "strike": 139.0,
+          "net_gamma_exp": 63439.79000000001
+        },
+        {
+          "strike": 140.0,
+          "net_gamma_exp": 987020.6699999999
+        },
+        {
+          "strike": 141.0,
+          "net_gamma_exp": 83436.38
+        },
+        {
+          "strike": 142.0,
+          "net_gamma_exp": 22710.19
+        },
+        {
+          "strike": 143.0,
+          "net_gamma_exp": 111174.64
+        },
+        {
+          "strike": 144.0,
+          "net_gamma_exp": 16854.52
+        },
+        {
+          "strike": 145.0,
+          "net_gamma_exp": 83227.52000000002
+        },
+        {
+          "strike": 146.0,
+          "net_gamma_exp": 555.19
+        },
+        {
+          "strike": 147.0,
+          "net_gamma_exp": 184.62
+        }
+      ]
+    },
+    {
+      "ticker": "PG",
+      "price": 144.44,
+      "gamma_flip": 210.0,
+      "net_gamma": 14074081.0,
+      "distance_pct": -45.39,
+      "above_flip": false,
+      "sector": "Consumer Defensive",
+      "market_cap": 338059722752,
+      "gamma_profile": [
+        {
+          "strike": 125.0,
+          "net_gamma_exp": -222027.0
+        },
+        {
+          "strike": 130.0,
+          "net_gamma_exp": -1318386.45
+        },
+        {
+          "strike": 131.0,
+          "net_gamma_exp": -8302.43
+        },
+        {
+          "strike": 132.0,
+          "net_gamma_exp": -4034.1800000000003
+        },
+        {
+          "strike": 133.0,
+          "net_gamma_exp": -74078.64
+        },
+        {
+          "strike": 134.0,
+          "net_gamma_exp": 561.52
+        },
+        {
+          "strike": 135.0,
+          "net_gamma_exp": -2620192.5
+        },
+        {
+          "strike": 136.0,
+          "net_gamma_exp": -10811.369999999999
+        },
+        {
+          "strike": 137.0,
+          "net_gamma_exp": -220853.7
+        },
+        {
+          "strike": 138.0,
+          "net_gamma_exp": -195887.6
+        },
+        {
+          "strike": 139.0,
+          "net_gamma_exp": -102888.37
+        },
+        {
+          "strike": 140.0,
+          "net_gamma_exp": -2503236.95
+        },
+        {
+          "strike": 141.0,
+          "net_gamma_exp": -290110.07
+        },
+        {
+          "strike": 142.0,
+          "net_gamma_exp": -803072.06
+        },
+        {
+          "strike": 143.0,
+          "net_gamma_exp": -2907749.71
+        },
+        {
+          "strike": 144.0,
+          "net_gamma_exp": -59520.829999999994
+        },
+        {
+          "strike": 145.0,
+          "net_gamma_exp": 2115897.8000000003
+        },
+        {
+          "strike": 146.0,
+          "net_gamma_exp": 1193225.3900000001
+        },
+        {
+          "strike": 147.0,
+          "net_gamma_exp": 1884228.5999999999
+        },
+        {
+          "strike": 148.0,
+          "net_gamma_exp": 340296.57999999996
+        },
+        {
+          "strike": 149.0,
+          "net_gamma_exp": 2035439.14
+        },
+        {
+          "strike": 150.0,
+          "net_gamma_exp": 9083464.44
+        },
+        {
+          "strike": 152.5,
+          "net_gamma_exp": 1252724.67
+        },
+        {
+          "strike": 155.0,
+          "net_gamma_exp": 2657990.9
+        },
+        {
+          "strike": 157.5,
+          "net_gamma_exp": 246184.97
+        },
+        {
+          "strike": 160.0,
+          "net_gamma_exp": 2912066.2299999995
+        },
+        {
+          "strike": 162.5,
+          "net_gamma_exp": 18201.88
+        },
+        {
+          "strike": 165.0,
+          "net_gamma_exp": 680340.4299999999
+        }
+      ]
+    },
+    {
+      "ticker": "BRK-B",
+      "price": 479.2,
+      "gamma_flip": null,
+      "net_gamma": 68516403.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Financial Services",
+      "market_cap": 1033572581376,
+      "gamma_profile": [
+        {
+          "strike": 410.0,
+          "net_gamma_exp": -36414.57
+        },
+        {
+          "strike": 415.0,
+          "net_gamma_exp": -42595.159999999996
+        },
+        {
+          "strike": 420.0,
+          "net_gamma_exp": -520416.4199999999
+        },
+        {
+          "strike": 425.0,
+          "net_gamma_exp": -176465.96999999997
+        },
+        {
+          "strike": 430.0,
+          "net_gamma_exp": -817928.55
+        },
+        {
+          "strike": 435.0,
+          "net_gamma_exp": -3145691.0999999996
+        },
+        {
+          "strike": 440.0,
+          "net_gamma_exp": -6704573.09
+        },
+        {
+          "strike": 445.0,
+          "net_gamma_exp": -1816940.04
+        },
+        {
+          "strike": 450.0,
+          "net_gamma_exp": -7735648.25
+        },
+        {
+          "strike": 455.0,
+          "net_gamma_exp": -5006741.88
+        },
+        {
+          "strike": 460.0,
+          "net_gamma_exp": -9681760.13
+        },
+        {
+          "strike": 465.0,
+          "net_gamma_exp": -8453571.69
+        },
+        {
+          "strike": 467.5,
+          "net_gamma_exp": -198437.12
+        },
+        {
+          "strike": 470.0,
+          "net_gamma_exp": -13414320.649999999
+        },
+        {
+          "strike": 472.5,
+          "net_gamma_exp": -446425.83
+        },
+        {
+          "strike": 475.0,
+          "net_gamma_exp": -4805158.27
+        },
+        {
+          "strike": 477.5,
+          "net_gamma_exp": 1122673.2
+        },
+        {
+          "strike": 480.0,
+          "net_gamma_exp": 22058800.380000003
+        },
+        {
+          "strike": 482.5,
+          "net_gamma_exp": 5459541.53
+        },
+        {
+          "strike": 485.0,
+          "net_gamma_exp": 19119285.369999997
+        },
+        {
+          "strike": 487.5,
+          "net_gamma_exp": 2622859.78
+        },
+        {
+          "strike": 490.0,
+          "net_gamma_exp": 2224583.07
+        },
+        {
+          "strike": 492.5,
+          "net_gamma_exp": 798346.72
+        },
+        {
+          "strike": 495.0,
+          "net_gamma_exp": 6566517.63
+        },
+        {
+          "strike": 497.5,
+          "net_gamma_exp": 1493402.71
+        },
+        {
+          "strike": 500.0,
+          "net_gamma_exp": 38480351.8
+        },
+        {
+          "strike": 502.5,
+          "net_gamma_exp": 633825.41
+        },
+        {
+          "strike": 505.0,
+          "net_gamma_exp": 11483573.92
+        },
+        {
+          "strike": 507.5,
+          "net_gamma_exp": 3494.42
+        },
+        {
+          "strike": 510.0,
+          "net_gamma_exp": 5139889.63
+        },
+        {
+          "strike": 512.5,
+          "net_gamma_exp": 37358.38
+        },
+        {
+          "strike": 515.0,
+          "net_gamma_exp": 1559421.71
+        },
+        {
+          "strike": 520.0,
+          "net_gamma_exp": 4572119.63
+        },
+        {
+          "strike": 525.0,
+          "net_gamma_exp": 1289720.64
+        },
+        {
+          "strike": 530.0,
+          "net_gamma_exp": 1737388.8900000001
+        },
+        {
+          "strike": 535.0,
+          "net_gamma_exp": 344533.2
+        },
+        {
+          "strike": 540.0,
+          "net_gamma_exp": 1823538.24
+        },
+        {
+          "strike": 545.0,
+          "net_gamma_exp": 123888.83
+        },
+        {
+          "strike": 550.0,
+          "net_gamma_exp": 716667.45
+        }
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "price": 174.4,
+      "gamma_flip": null,
+      "net_gamma": 363499935.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Technology",
+      "market_cap": 4238791933952,
+      "gamma_profile": [
+        {
+          "strike": 150.0,
+          "net_gamma_exp": -16405117.59
+        },
+        {
+          "strike": 152.5,
+          "net_gamma_exp": -3092502.5300000003
+        },
+        {
+          "strike": 155.0,
+          "net_gamma_exp": -28399886.07
+        },
+        {
+          "strike": 157.5,
+          "net_gamma_exp": -2269304.1799999997
+        },
+        {
+          "strike": 160.0,
+          "net_gamma_exp": -43152786.739999995
+        },
+        {
+          "strike": 162.5,
+          "net_gamma_exp": -5042486.609999999
+        },
+        {
+          "strike": 165.0,
+          "net_gamma_exp": -47211267.64
+        },
+        {
+          "strike": 167.5,
+          "net_gamma_exp": 1659620.1700000002
+        },
+        {
+          "strike": 170.0,
+          "net_gamma_exp": -69813761.66
+        },
+        {
+          "strike": 172.5,
+          "net_gamma_exp": 106941558.77
+        },
+        {
+          "strike": 175.0,
+          "net_gamma_exp": 43892153.46
+        },
+        {
+          "strike": 177.5,
+          "net_gamma_exp": 83545381.95
+        },
+        {
+          "strike": 180.0,
+          "net_gamma_exp": 79238410.86
+        },
+        {
+          "strike": 182.5,
+          "net_gamma_exp": 19689846.869999997
+        },
+        {
+          "strike": 185.0,
+          "net_gamma_exp": 66887609.54
+        },
+        {
+          "strike": 187.5,
+          "net_gamma_exp": 5510912.02
+        },
+        {
+          "strike": 190.0,
+          "net_gamma_exp": 70181406.25
+        },
+        {
+          "strike": 192.5,
+          "net_gamma_exp": 6318387.99
+        },
+        {
+          "strike": 195.0,
+          "net_gamma_exp": 41410916.88
+        },
+        {
+          "strike": 197.5,
+          "net_gamma_exp": 1418266.1
+        },
+        {
+          "strike": 200.0,
+          "net_gamma_exp": 44342066.75
+        }
+      ]
+    },
+    {
+      "ticker": "META",
+      "price": 572.13,
+      "gamma_flip": null,
+      "net_gamma": 242725421.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Communication Services",
+      "market_cap": 1447234633728,
+      "gamma_profile": [
+        {
+          "strike": 560.0,
+          "net_gamma_exp": 10723849.27
+        },
+        {
+          "strike": 562.5,
+          "net_gamma_exp": 3858825.46
+        },
+        {
+          "strike": 565.0,
+          "net_gamma_exp": 10508497.860000001
+        },
+        {
+          "strike": 567.5,
+          "net_gamma_exp": 5223458.62
+        },
+        {
+          "strike": 570.0,
+          "net_gamma_exp": 11061569.31
+        },
+        {
+          "strike": 572.5,
+          "net_gamma_exp": 3002117.6399999997
+        },
+        {
+          "strike": 575.0,
+          "net_gamma_exp": 10474663.18
+        },
+        {
+          "strike": 577.5,
+          "net_gamma_exp": 6883883.699999999
+        },
+        {
+          "strike": 580.0,
+          "net_gamma_exp": 33925618.28
+        },
+        {
+          "strike": 582.5,
+          "net_gamma_exp": 20749311.05
+        },
+        {
+          "strike": 585.0,
+          "net_gamma_exp": 10162034.01
+        },
+        {
+          "strike": 587.5,
+          "net_gamma_exp": 6733747.62
+        },
+        {
+          "strike": 590.0,
+          "net_gamma_exp": -2333930.8600000003
+        },
+        {
+          "strike": 592.5,
+          "net_gamma_exp": 2707218.49
+        },
+        {
+          "strike": 595.0,
+          "net_gamma_exp": -422771.1299999998
+        },
+        {
+          "strike": 597.5,
+          "net_gamma_exp": 1386843.59
+        },
+        {
+          "strike": 600.0,
+          "net_gamma_exp": 31895311.7
+        },
+        {
+          "strike": 602.5,
+          "net_gamma_exp": 3082332.54
+        },
+        {
+          "strike": 605.0,
+          "net_gamma_exp": 7171769.13
+        },
+        {
+          "strike": 607.5,
+          "net_gamma_exp": 1507504.4899999998
+        },
+        {
+          "strike": 610.0,
+          "net_gamma_exp": 827408.2100000002
+        },
+        {
+          "strike": 612.5,
+          "net_gamma_exp": 1472483.03
+        },
+        {
+          "strike": 615.0,
+          "net_gamma_exp": 7407050.18
+        },
+        {
+          "strike": 617.5,
+          "net_gamma_exp": 1152119.13
+        },
+        {
+          "strike": 620.0,
+          "net_gamma_exp": 7704004.660000001
+        },
+        {
+          "strike": 622.5,
+          "net_gamma_exp": 391149.01
+        },
+        {
+          "strike": 625.0,
+          "net_gamma_exp": 4880599.45
+        },
+        {
+          "strike": 627.5,
+          "net_gamma_exp": 804743.42
+        },
+        {
+          "strike": 630.0,
+          "net_gamma_exp": 624624.3200000001
+        },
+        {
+          "strike": 632.5,
+          "net_gamma_exp": 103295.34999999999
+        },
+        {
+          "strike": 635.0,
+          "net_gamma_exp": 922761.53
+        },
+        {
+          "strike": 637.5,
+          "net_gamma_exp": 46021.5
+        },
+        {
+          "strike": 640.0,
+          "net_gamma_exp": 5199014.33
+        },
+        {
+          "strike": 642.5,
+          "net_gamma_exp": 3775.74
+        },
+        {
+          "strike": 645.0,
+          "net_gamma_exp": 11585192.2
+        },
+        {
+          "strike": 647.5,
+          "net_gamma_exp": 23044.53
+        },
+        {
+          "strike": 650.0,
+          "net_gamma_exp": 14915294.95
+        },
+        {
+          "strike": 652.5,
+          "net_gamma_exp": 1360.8600000000001
+        },
+        {
+          "strike": 655.0,
+          "net_gamma_exp": 1857763.1
+        },
+        {
+          "strike": 657.5,
+          "net_gamma_exp": 3765.2
+        }
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "price": 208.27,
+      "gamma_flip": null,
+      "net_gamma": 313678536.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Consumer Cyclical",
+      "market_cap": 2235761950720,
+      "gamma_profile": [
+        {
+          "strike": 177.5,
+          "net_gamma_exp": -2097.56
+        },
+        {
+          "strike": 180.0,
+          "net_gamma_exp": -7637328.140000001
+        },
+        {
+          "strike": 182.5,
+          "net_gamma_exp": -9361.5
+        },
+        {
+          "strike": 185.0,
+          "net_gamma_exp": -10665004.78
+        },
+        {
+          "strike": 187.5,
+          "net_gamma_exp": -996246.18
+        },
+        {
+          "strike": 190.0,
+          "net_gamma_exp": -7773067.420000002
+        },
+        {
+          "strike": 192.5,
+          "net_gamma_exp": -2661721.64
+        },
+        {
+          "strike": 195.0,
+          "net_gamma_exp": -23117513.25
+        },
+        {
+          "strike": 197.5,
+          "net_gamma_exp": -5688857.01
+        },
+        {
+          "strike": 200.0,
+          "net_gamma_exp": -19732507.72
+        },
+        {
+          "strike": 202.5,
+          "net_gamma_exp": 4085558.87
+        },
+        {
+          "strike": 205.0,
+          "net_gamma_exp": 27143991.500000004
+        },
+        {
+          "strike": 207.5,
+          "net_gamma_exp": 40770301.83
+        },
+        {
+          "strike": 210.0,
+          "net_gamma_exp": 67989683.94
+        },
+        {
+          "strike": 212.5,
+          "net_gamma_exp": 40873596.83
+        },
+        {
+          "strike": 215.0,
+          "net_gamma_exp": 39692537.0
+        },
+        {
+          "strike": 217.5,
+          "net_gamma_exp": 16659205.54
+        },
+        {
+          "strike": 220.0,
+          "net_gamma_exp": 36180018.6
+        },
+        {
+          "strike": 222.5,
+          "net_gamma_exp": 10023747.309999999
+        },
+        {
+          "strike": 225.0,
+          "net_gamma_exp": 30278116.339999996
+        },
+        {
+          "strike": 227.5,
+          "net_gamma_exp": 2404347.03
+        },
+        {
+          "strike": 230.0,
+          "net_gamma_exp": 25894259.28
+        },
+        {
+          "strike": 232.5,
+          "net_gamma_exp": 162594.87999999998
+        },
+        {
+          "strike": 235.0,
+          "net_gamma_exp": 18400800.43
+        }
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "price": 287.56,
+      "gamma_flip": null,
+      "net_gamma": 162796817.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Communication Services",
+      "market_cap": 3478613393408,
+      "gamma_profile": [
+        {
+          "strike": 245.0,
+          "net_gamma_exp": -2237882.2199999997
+        },
+        {
+          "strike": 247.5,
+          "net_gamma_exp": -6041.81
+        },
+        {
+          "strike": 250.0,
+          "net_gamma_exp": -4299999.35
+        },
+        {
+          "strike": 252.5,
+          "net_gamma_exp": 8323.0
+        },
+        {
+          "strike": 255.0,
+          "net_gamma_exp": -6122920.140000001
+        },
+        {
+          "strike": 257.5,
+          "net_gamma_exp": -3116.27
+        },
+        {
+          "strike": 260.0,
+          "net_gamma_exp": -9744514.120000001
+        },
+        {
+          "strike": 262.5,
+          "net_gamma_exp": -140601.28
+        },
+        {
+          "strike": 265.0,
+          "net_gamma_exp": -10390508.42
+        },
+        {
+          "strike": 267.5,
+          "net_gamma_exp": -1851180.94
+        },
+        {
+          "strike": 270.0,
+          "net_gamma_exp": -11486485.42
+        },
+        {
+          "strike": 272.5,
+          "net_gamma_exp": -777952.9100000001
+        },
+        {
+          "strike": 275.0,
+          "net_gamma_exp": -9236915.95
+        },
+        {
+          "strike": 277.5,
+          "net_gamma_exp": 2829900.58
+        },
+        {
+          "strike": 280.0,
+          "net_gamma_exp": 14599949.389999997
+        },
+        {
+          "strike": 282.5,
+          "net_gamma_exp": 9980866.2
+        },
+        {
+          "strike": 285.0,
+          "net_gamma_exp": 31101888.490000002
+        },
+        {
+          "strike": 287.5,
+          "net_gamma_exp": 12262971.43
+        },
+        {
+          "strike": 290.0,
+          "net_gamma_exp": 28336455.5
+        },
+        {
+          "strike": 292.5,
+          "net_gamma_exp": 7639507.14
+        },
+        {
+          "strike": 295.0,
+          "net_gamma_exp": 9898223.55
+        },
+        {
+          "strike": 297.5,
+          "net_gamma_exp": 4481708.57
+        },
+        {
+          "strike": 300.0,
+          "net_gamma_exp": 17234737.52
+        },
+        {
+          "strike": 302.5,
+          "net_gamma_exp": 5179574.890000001
+        },
+        {
+          "strike": 305.0,
+          "net_gamma_exp": 7482280.44
+        },
+        {
+          "strike": 307.5,
+          "net_gamma_exp": 847015.02
+        },
+        {
+          "strike": 310.0,
+          "net_gamma_exp": 11441750.7
+        },
+        {
+          "strike": 312.5,
+          "net_gamma_exp": 2922824.8
+        },
+        {
+          "strike": 315.0,
+          "net_gamma_exp": 8830228.86
+        },
+        {
+          "strike": 317.5,
+          "net_gamma_exp": 1801982.5
+        },
+        {
+          "strike": 320.0,
+          "net_gamma_exp": 7330509.91
+        },
+        {
+          "strike": 322.5,
+          "net_gamma_exp": 375190.29000000004
+        },
+        {
+          "strike": 325.0,
+          "net_gamma_exp": 5528242.23
+        },
+        {
+          "strike": 327.5,
+          "net_gamma_exp": 459917.17000000004
+        },
+        {
+          "strike": 330.0,
+          "net_gamma_exp": 11835750.31
+        }
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "price": 370.17,
+      "gamma_flip": null,
+      "net_gamma": 301744019.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Technology",
+      "market_cap": 2751243485184,
+      "gamma_profile": [
+        {
+          "strike": 327.5,
+          "net_gamma_exp": -32371.07
+        },
+        {
+          "strike": 330.0,
+          "net_gamma_exp": -4018746.12
+        },
+        {
+          "strike": 332.5,
+          "net_gamma_exp": -141492.62
+        },
+        {
+          "strike": 335.0,
+          "net_gamma_exp": -5203952.36
+        },
+        {
+          "strike": 337.5,
+          "net_gamma_exp": -139380.36
+        },
+        {
+          "strike": 340.0,
+          "net_gamma_exp": -10136795.969999999
+        },
+        {
+          "strike": 342.5,
+          "net_gamma_exp": -168394.03
+        },
+        {
+          "strike": 345.0,
+          "net_gamma_exp": -8195506.989999999
+        },
+        {
+          "strike": 347.5,
+          "net_gamma_exp": -667100.19
+        },
+        {
+          "strike": 350.0,
+          "net_gamma_exp": -31115087.66
+        },
+        {
+          "strike": 352.5,
+          "net_gamma_exp": -2573866.67
+        },
+        {
+          "strike": 355.0,
+          "net_gamma_exp": -11921069.68
+        },
+        {
+          "strike": 357.5,
+          "net_gamma_exp": 644808.6600000001
+        },
+        {
+          "strike": 360.0,
+          "net_gamma_exp": -14390335.219999999
+        },
+        {
+          "strike": 362.5,
+          "net_gamma_exp": -680009.81
+        },
+        {
+          "strike": 365.0,
+          "net_gamma_exp": -9298242.85
+        },
+        {
+          "strike": 367.5,
+          "net_gamma_exp": 20136284.25
+        },
+        {
+          "strike": 370.0,
+          "net_gamma_exp": 10188027.680000002
+        },
+        {
+          "strike": 372.5,
+          "net_gamma_exp": 40237129.650000006
+        },
+        {
+          "strike": 375.0,
+          "net_gamma_exp": 41160039.8
+        },
+        {
+          "strike": 377.5,
+          "net_gamma_exp": 15413075.059999999
+        },
+        {
+          "strike": 380.0,
+          "net_gamma_exp": 49554439.89
+        },
+        {
+          "strike": 382.5,
+          "net_gamma_exp": 9854414.4
+        },
+        {
+          "strike": 385.0,
+          "net_gamma_exp": 17098017.79
+        },
+        {
+          "strike": 387.5,
+          "net_gamma_exp": 2586879.88
+        },
+        {
+          "strike": 390.0,
+          "net_gamma_exp": 19343383.33
+        },
+        {
+          "strike": 392.5,
+          "net_gamma_exp": 2614860.44
+        },
+        {
+          "strike": 395.0,
+          "net_gamma_exp": 9122443.879999999
+        },
+        {
+          "strike": 397.5,
+          "net_gamma_exp": 2571853.86
+        },
+        {
+          "strike": 400.0,
+          "net_gamma_exp": 25176722.37
+        },
+        {
+          "strike": 402.5,
+          "net_gamma_exp": 2442483.91
+        },
+        {
+          "strike": 405.0,
+          "net_gamma_exp": 48404300.97
+        },
+        {
+          "strike": 407.5,
+          "net_gamma_exp": 785925.33
+        },
+        {
+          "strike": 410.0,
+          "net_gamma_exp": 8273696.83
+        },
+        {
+          "strike": 412.5,
+          "net_gamma_exp": 513752.64
+        },
+        {
+          "strike": 415.0,
+          "net_gamma_exp": 8375562.33
+        },
+        {
+          "strike": 417.5,
+          "net_gamma_exp": 1809.5
+        },
+        {
+          "strike": 420.0,
+          "net_gamma_exp": 9706971.120000001
+        },
+        {
+          "strike": 422.5,
+          "net_gamma_exp": 143.36
+        },
+        {
+          "strike": 425.0,
+          "net_gamma_exp": 4011684.75
+        }
+      ]
+    },
+    {
+      "ticker": "AAPL",
+      "price": 253.79,
+      "gamma_flip": null,
+      "net_gamma": 245755121.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Technology",
+      "market_cap": 3730186436608,
+      "gamma_profile": [
+        {
+          "strike": 217.5,
+          "net_gamma_exp": -2493.81
+        },
+        {
+          "strike": 220.0,
+          "net_gamma_exp": -2542357.07
+        },
+        {
+          "strike": 222.5,
+          "net_gamma_exp": 715.1
+        },
+        {
+          "strike": 225.0,
+          "net_gamma_exp": -7129467.58
+        },
+        {
+          "strike": 227.5,
+          "net_gamma_exp": -287557.75
+        },
+        {
+          "strike": 230.0,
+          "net_gamma_exp": -20686579.21
+        },
+        {
+          "strike": 232.5,
+          "net_gamma_exp": -598472.1
+        },
+        {
+          "strike": 235.0,
+          "net_gamma_exp": -22078494.11
+        },
+        {
+          "strike": 237.5,
+          "net_gamma_exp": -1282999.2999999998
+        },
+        {
+          "strike": 240.0,
+          "net_gamma_exp": 1413757.6000000015
+        },
+        {
+          "strike": 242.5,
+          "net_gamma_exp": -3675854.67
+        },
+        {
+          "strike": 245.0,
+          "net_gamma_exp": -33161258.32
+        },
+        {
+          "strike": 247.5,
+          "net_gamma_exp": -1406701.0
+        },
+        {
+          "strike": 250.0,
+          "net_gamma_exp": -27352775.259999998
+        },
+        {
+          "strike": 252.5,
+          "net_gamma_exp": -6290064.969999999
+        },
+        {
+          "strike": 255.0,
+          "net_gamma_exp": 86410128.25
+        },
+        {
+          "strike": 257.5,
+          "net_gamma_exp": 50365990.49
+        },
+        {
+          "strike": 260.0,
+          "net_gamma_exp": 28280731.2
+        },
+        {
+          "strike": 262.5,
+          "net_gamma_exp": 21433357.99
+        },
+        {
+          "strike": 265.0,
+          "net_gamma_exp": 47805040.17
+        },
+        {
+          "strike": 267.5,
+          "net_gamma_exp": 6738218.149999999
+        },
+        {
+          "strike": 270.0,
+          "net_gamma_exp": 27481325.310000002
+        },
+        {
+          "strike": 272.5,
+          "net_gamma_exp": 1900750.9
+        },
+        {
+          "strike": 275.0,
+          "net_gamma_exp": 31602516.7
+        },
+        {
+          "strike": 277.5,
+          "net_gamma_exp": 205281.38
+        },
+        {
+          "strike": 280.0,
+          "net_gamma_exp": 26034722.37
+        },
+        {
+          "strike": 285.0,
+          "net_gamma_exp": 19022166.68
+        },
+        {
+          "strike": 290.0,
+          "net_gamma_exp": 9491702.79
+        }
+      ]
+    },
+    {
+      "ticker": "TSLA",
+      "price": 371.75,
+      "gamma_flip": null,
+      "net_gamma": 180962458.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Consumer Cyclical",
+      "market_cap": 1394966528000,
+      "gamma_profile": [
+        {
+          "strike": 330.0,
+          "net_gamma_exp": -11771949.14
+        },
+        {
+          "strike": 332.5,
+          "net_gamma_exp": -343618.46
+        },
+        {
+          "strike": 335.0,
+          "net_gamma_exp": -13951787.08
+        },
+        {
+          "strike": 337.5,
+          "net_gamma_exp": -516957.14
+        },
+        {
+          "strike": 340.0,
+          "net_gamma_exp": -13374558.64
+        },
+        {
+          "strike": 342.5,
+          "net_gamma_exp": -1094897.53
+        },
+        {
+          "strike": 345.0,
+          "net_gamma_exp": -13407788.14
+        },
+        {
+          "strike": 347.5,
+          "net_gamma_exp": -1013956.21
+        },
+        {
+          "strike": 350.0,
+          "net_gamma_exp": -36309838.379999995
+        },
+        {
+          "strike": 352.5,
+          "net_gamma_exp": -941907.99
+        },
+        {
+          "strike": 355.0,
+          "net_gamma_exp": -14154860.3
+        },
+        {
+          "strike": 357.5,
+          "net_gamma_exp": 733556.5700000001
+        },
+        {
+          "strike": 360.0,
+          "net_gamma_exp": -34319110.85
+        },
+        {
+          "strike": 362.5,
+          "net_gamma_exp": 1004168.74
+        },
+        {
+          "strike": 365.0,
+          "net_gamma_exp": 3745060.030000001
+        },
+        {
+          "strike": 367.5,
+          "net_gamma_exp": 6844758.66
+        },
+        {
+          "strike": 370.0,
+          "net_gamma_exp": -10114322.02
+        },
+        {
+          "strike": 372.5,
+          "net_gamma_exp": 39019377.43
+        },
+        {
+          "strike": 375.0,
+          "net_gamma_exp": 52538254.23
+        },
+        {
+          "strike": 377.5,
+          "net_gamma_exp": 20867481.38
+        },
+        {
+          "strike": 380.0,
+          "net_gamma_exp": 24087814.110000003
+        },
+        {
+          "strike": 382.5,
+          "net_gamma_exp": 25879604.29
+        },
+        {
+          "strike": 385.0,
+          "net_gamma_exp": 21710394.799999997
+        },
+        {
+          "strike": 387.5,
+          "net_gamma_exp": 11262149.87
+        },
+        {
+          "strike": 390.0,
+          "net_gamma_exp": 13907865.719999999
+        },
+        {
+          "strike": 392.5,
+          "net_gamma_exp": 4653338.21
+        },
+        {
+          "strike": 395.0,
+          "net_gamma_exp": 591776.0900000001
+        },
+        {
+          "strike": 397.5,
+          "net_gamma_exp": 3462019.08
+        },
+        {
+          "strike": 400.0,
+          "net_gamma_exp": 18095796.53
+        },
+        {
+          "strike": 402.5,
+          "net_gamma_exp": 1457440.04
+        },
+        {
+          "strike": 405.0,
+          "net_gamma_exp": 14361481.200000001
+        },
+        {
+          "strike": 407.5,
+          "net_gamma_exp": 417083.44999999995
+        },
+        {
+          "strike": 410.0,
+          "net_gamma_exp": 18628143.509999998
+        },
+        {
+          "strike": 412.5,
+          "net_gamma_exp": 120331.06
+        },
+        {
+          "strike": 415.0,
+          "net_gamma_exp": 6873998.16
+        },
+        {
+          "strike": 417.5,
+          "net_gamma_exp": 72561.12
+        },
+        {
+          "strike": 420.0,
+          "net_gamma_exp": 11027101.32
+        },
+        {
+          "strike": 422.5,
+          "net_gamma_exp": 30544.08
+        },
+        {
+          "strike": 425.0,
+          "net_gamma_exp": 4965973.7
+        },
+        {
+          "strike": 427.5,
+          "net_gamma_exp": 24138.73
+        }
+      ]
+    },
+    {
+      "ticker": "V",
+      "price": 302.24,
+      "gamma_flip": null,
+      "net_gamma": 9000779.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Financial Services",
+      "market_cap": 582730645504,
+      "gamma_profile": [
+        {
+          "strike": 260.0,
+          "net_gamma_exp": -423334.31
+        },
+        {
+          "strike": 262.5,
+          "net_gamma_exp": -217.39
+        },
+        {
+          "strike": 265.0,
+          "net_gamma_exp": -660687.88
+        },
+        {
+          "strike": 267.5,
+          "net_gamma_exp": 4099.21
+        },
+        {
+          "strike": 270.0,
+          "net_gamma_exp": -1000202.8499999999
+        },
+        {
+          "strike": 272.5,
+          "net_gamma_exp": -13416.21
+        },
+        {
+          "strike": 275.0,
+          "net_gamma_exp": -2244785.4299999997
+        },
+        {
+          "strike": 277.5,
+          "net_gamma_exp": -31718.120000000003
+        },
+        {
+          "strike": 280.0,
+          "net_gamma_exp": -3254890.83
+        },
+        {
+          "strike": 282.5,
+          "net_gamma_exp": -175641.85
+        },
+        {
+          "strike": 285.0,
+          "net_gamma_exp": -3707398.5199999996
+        },
+        {
+          "strike": 287.5,
+          "net_gamma_exp": -681381.52
+        },
+        {
+          "strike": 290.0,
+          "net_gamma_exp": -2763764.4400000004
+        },
+        {
+          "strike": 292.5,
+          "net_gamma_exp": 627348.0900000001
+        },
+        {
+          "strike": 295.0,
+          "net_gamma_exp": -3692475.18
+        },
+        {
+          "strike": 297.5,
+          "net_gamma_exp": -1192167.03
+        },
+        {
+          "strike": 300.0,
+          "net_gamma_exp": -4160935.8600000003
+        },
+        {
+          "strike": 302.5,
+          "net_gamma_exp": 5924069.39
+        },
+        {
+          "strike": 305.0,
+          "net_gamma_exp": 5566884.47
+        },
+        {
+          "strike": 307.5,
+          "net_gamma_exp": 3126453.6100000003
+        },
+        {
+          "strike": 310.0,
+          "net_gamma_exp": 623923.54
+        },
+        {
+          "strike": 312.5,
+          "net_gamma_exp": 653167.48
+        },
+        {
+          "strike": 315.0,
+          "net_gamma_exp": 2540484.08
+        },
+        {
+          "strike": 317.5,
+          "net_gamma_exp": 187563.99
+        },
+        {
+          "strike": 320.0,
+          "net_gamma_exp": 1070103.91
+        },
+        {
+          "strike": 322.5,
+          "net_gamma_exp": 55278.76
+        },
+        {
+          "strike": 325.0,
+          "net_gamma_exp": 3254082.44
+        },
+        {
+          "strike": 327.5,
+          "net_gamma_exp": 21352.33
+        },
+        {
+          "strike": 330.0,
+          "net_gamma_exp": 2229686.59
+        },
+        {
+          "strike": 335.0,
+          "net_gamma_exp": 2664079.54
+        },
+        {
+          "strike": 340.0,
+          "net_gamma_exp": 593488.61
+        },
+        {
+          "strike": 345.0,
+          "net_gamma_exp": 1515059.52
+        }
+      ]
+    },
+    {
+      "ticker": "JPM",
+      "price": 294.16,
+      "gamma_flip": null,
+      "net_gamma": 55715182.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Financial Services",
+      "market_cap": 793359089664,
+      "gamma_profile": [
+        {
+          "strike": 252.5,
+          "net_gamma_exp": -2489.35
+        },
+        {
+          "strike": 255.0,
+          "net_gamma_exp": -1022924.8500000001
+        },
+        {
+          "strike": 257.5,
+          "net_gamma_exp": -1877.98
+        },
+        {
+          "strike": 260.0,
+          "net_gamma_exp": -3563137.55
+        },
+        {
+          "strike": 262.5,
+          "net_gamma_exp": -109210.5
+        },
+        {
+          "strike": 265.0,
+          "net_gamma_exp": -3939102.3900000006
+        },
+        {
+          "strike": 267.5,
+          "net_gamma_exp": -155290.48
+        },
+        {
+          "strike": 270.0,
+          "net_gamma_exp": -3809497.01
+        },
+        {
+          "strike": 272.5,
+          "net_gamma_exp": -541319.02
+        },
+        {
+          "strike": 275.0,
+          "net_gamma_exp": -8847693.26
+        },
+        {
+          "strike": 277.5,
+          "net_gamma_exp": -45970.03
+        },
+        {
+          "strike": 280.0,
+          "net_gamma_exp": -6197007.02
+        },
+        {
+          "strike": 282.5,
+          "net_gamma_exp": -1606201.36
+        },
+        {
+          "strike": 285.0,
+          "net_gamma_exp": -2821326.22
+        },
+        {
+          "strike": 287.5,
+          "net_gamma_exp": 1223861.17
+        },
+        {
+          "strike": 290.0,
+          "net_gamma_exp": 8025230.16
+        },
+        {
+          "strike": 292.5,
+          "net_gamma_exp": 5400629.180000001
+        },
+        {
+          "strike": 295.0,
+          "net_gamma_exp": 13417476.66
+        },
+        {
+          "strike": 297.5,
+          "net_gamma_exp": 8502305.040000001
+        },
+        {
+          "strike": 300.0,
+          "net_gamma_exp": 15418889.85
+        },
+        {
+          "strike": 302.5,
+          "net_gamma_exp": 5204085.89
+        },
+        {
+          "strike": 305.0,
+          "net_gamma_exp": 5658987.01
+        },
+        {
+          "strike": 307.5,
+          "net_gamma_exp": 443887.7
+        },
+        {
+          "strike": 310.0,
+          "net_gamma_exp": 11135410.88
+        },
+        {
+          "strike": 312.5,
+          "net_gamma_exp": 5706.79
+        },
+        {
+          "strike": 315.0,
+          "net_gamma_exp": 5241341.71
+        },
+        {
+          "strike": 320.0,
+          "net_gamma_exp": 5449329.16
+        },
+        {
+          "strike": 325.0,
+          "net_gamma_exp": 4541744.1
+        },
+        {
+          "strike": 330.0,
+          "net_gamma_exp": 3208282.62
+        },
+        {
+          "strike": 335.0,
+          "net_gamma_exp": 681865.55
+        }
+      ]
+    },
+    {
+      "ticker": "UNH",
+      "price": 270.59,
+      "gamma_flip": null,
+      "net_gamma": 34185587.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Healthcare",
+      "market_cap": 245608005632,
+      "gamma_profile": [
+        {
+          "strike": 232.5,
+          "net_gamma_exp": -7362.94
+        },
+        {
+          "strike": 235.0,
+          "net_gamma_exp": -245490.61000000002
+        },
+        {
+          "strike": 237.5,
+          "net_gamma_exp": -6648.96
+        },
+        {
+          "strike": 240.0,
+          "net_gamma_exp": -2299642.0100000002
+        },
+        {
+          "strike": 242.5,
+          "net_gamma_exp": -56108.62
+        },
+        {
+          "strike": 245.0,
+          "net_gamma_exp": -712953.1000000001
+        },
+        {
+          "strike": 247.5,
+          "net_gamma_exp": -92774.18
+        },
+        {
+          "strike": 250.0,
+          "net_gamma_exp": -5955956.640000001
+        },
+        {
+          "strike": 252.5,
+          "net_gamma_exp": -521824.06
+        },
+        {
+          "strike": 255.0,
+          "net_gamma_exp": -2987667.1799999997
+        },
+        {
+          "strike": 257.5,
+          "net_gamma_exp": -1727241.67
+        },
+        {
+          "strike": 260.0,
+          "net_gamma_exp": -6222142.449999999
+        },
+        {
+          "strike": 262.5,
+          "net_gamma_exp": 1445617.35
+        },
+        {
+          "strike": 265.0,
+          "net_gamma_exp": -2303517.1399999997
+        },
+        {
+          "strike": 267.5,
+          "net_gamma_exp": 9381279.72
+        },
+        {
+          "strike": 270.0,
+          "net_gamma_exp": 331675.11000000034
+        },
+        {
+          "strike": 272.5,
+          "net_gamma_exp": 2786406.54
+        },
+        {
+          "strike": 275.0,
+          "net_gamma_exp": 202437.46000000002
+        },
+        {
+          "strike": 277.5,
+          "net_gamma_exp": 8459583.66
+        },
+        {
+          "strike": 280.0,
+          "net_gamma_exp": 3039360.840000001
+        },
+        {
+          "strike": 282.5,
+          "net_gamma_exp": 1552874.94
+        },
+        {
+          "strike": 285.0,
+          "net_gamma_exp": 4823732.64
+        },
+        {
+          "strike": 287.5,
+          "net_gamma_exp": 1202580.73
+        },
+        {
+          "strike": 290.0,
+          "net_gamma_exp": 2267961.18
+        },
+        {
+          "strike": 292.5,
+          "net_gamma_exp": 1643645.6400000001
+        },
+        {
+          "strike": 295.0,
+          "net_gamma_exp": 1475492.16
+        },
+        {
+          "strike": 297.5,
+          "net_gamma_exp": 310030.62
+        },
+        {
+          "strike": 300.0,
+          "net_gamma_exp": 8865053.84
+        },
+        {
+          "strike": 302.5,
+          "net_gamma_exp": 149720.92
+        },
+        {
+          "strike": 305.0,
+          "net_gamma_exp": 732778.15
+        },
+        {
+          "strike": 307.5,
+          "net_gamma_exp": 128.48
+        },
+        {
+          "strike": 310.0,
+          "net_gamma_exp": 4238192.69
+        }
+      ]
+    },
+    {
+      "ticker": "XOM",
+      "price": 169.66,
+      "gamma_flip": null,
+      "net_gamma": 92527295.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Energy",
+      "market_cap": 706933096448,
+      "gamma_profile": [
+        {
+          "strike": 145.0,
+          "net_gamma_exp": -49061.76000000001
+        },
+        {
+          "strike": 146.0,
+          "net_gamma_exp": -33517.32
+        },
+        {
+          "strike": 147.0,
+          "net_gamma_exp": -195738.7
+        },
+        {
+          "strike": 148.0,
+          "net_gamma_exp": -149930.74
+        },
+        {
+          "strike": 149.0,
+          "net_gamma_exp": -72976.92
+        },
+        {
+          "strike": 150.0,
+          "net_gamma_exp": 607090.72
+        },
+        {
+          "strike": 152.5,
+          "net_gamma_exp": 29876.280000000006
+        },
+        {
+          "strike": 155.0,
+          "net_gamma_exp": 2972229.71
+        },
+        {
+          "strike": 157.5,
+          "net_gamma_exp": -524353.63
+        },
+        {
+          "strike": 160.0,
+          "net_gamma_exp": 10936002.1
+        },
+        {
+          "strike": 162.5,
+          "net_gamma_exp": 1070329.93
+        },
+        {
+          "strike": 165.0,
+          "net_gamma_exp": 12647112.21
+        },
+        {
+          "strike": 167.5,
+          "net_gamma_exp": 117426.12
+        },
+        {
+          "strike": 170.0,
+          "net_gamma_exp": 14557772.540000001
+        },
+        {
+          "strike": 172.5,
+          "net_gamma_exp": 4716777.54
+        },
+        {
+          "strike": 175.0,
+          "net_gamma_exp": 10166173.84
+        },
+        {
+          "strike": 177.5,
+          "net_gamma_exp": 4195812.21
+        },
+        {
+          "strike": 180.0,
+          "net_gamma_exp": 20071859.54
+        },
+        {
+          "strike": 182.5,
+          "net_gamma_exp": 625803.38
+        },
+        {
+          "strike": 185.0,
+          "net_gamma_exp": 2309275.54
+        },
+        {
+          "strike": 187.5,
+          "net_gamma_exp": 239079.1
+        },
+        {
+          "strike": 190.0,
+          "net_gamma_exp": 1240388.08
+        },
+        {
+          "strike": 195.0,
+          "net_gamma_exp": 1654666.77
+        }
+      ]
+    },
+    {
+      "ticker": "MA",
+      "price": 499.66,
+      "gamma_flip": null,
+      "net_gamma": 1153692.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Financial Services",
+      "market_cap": 445915430912,
+      "gamma_profile": [
+        {
+          "strike": 445.0,
+          "net_gamma_exp": -213293.77
+        },
+        {
+          "strike": 447.5,
+          "net_gamma_exp": -5391.82
+        },
+        {
+          "strike": 450.0,
+          "net_gamma_exp": -991901.8800000001
+        },
+        {
+          "strike": 455.0,
+          "net_gamma_exp": -437602.43
+        },
+        {
+          "strike": 460.0,
+          "net_gamma_exp": -1158394.9
+        },
+        {
+          "strike": 462.5,
+          "net_gamma_exp": -3804.87
+        },
+        {
+          "strike": 465.0,
+          "net_gamma_exp": -1319605.18
+        },
+        {
+          "strike": 470.0,
+          "net_gamma_exp": -1522958.84
+        },
+        {
+          "strike": 472.5,
+          "net_gamma_exp": -50778.7
+        },
+        {
+          "strike": 475.0,
+          "net_gamma_exp": -1292840.57
+        },
+        {
+          "strike": 477.5,
+          "net_gamma_exp": -146439.39
+        },
+        {
+          "strike": 480.0,
+          "net_gamma_exp": -4825706.49
+        },
+        {
+          "strike": 482.5,
+          "net_gamma_exp": -77242.44
+        },
+        {
+          "strike": 485.0,
+          "net_gamma_exp": -1451366.33
+        },
+        {
+          "strike": 487.5,
+          "net_gamma_exp": -515373.73
+        },
+        {
+          "strike": 490.0,
+          "net_gamma_exp": -3060258.0200000005
+        },
+        {
+          "strike": 492.5,
+          "net_gamma_exp": 2692339.16
+        },
+        {
+          "strike": 495.0,
+          "net_gamma_exp": -1545248.03
+        },
+        {
+          "strike": 497.5,
+          "net_gamma_exp": 206115.15999999997
+        },
+        {
+          "strike": 500.0,
+          "net_gamma_exp": -514481.1100000001
+        },
+        {
+          "strike": 502.5,
+          "net_gamma_exp": 4067127.9600000004
+        },
+        {
+          "strike": 505.0,
+          "net_gamma_exp": -756156.3200000001
+        },
+        {
+          "strike": 507.5,
+          "net_gamma_exp": 356773.88
+        },
+        {
+          "strike": 510.0,
+          "net_gamma_exp": 1266451.1400000001
+        },
+        {
+          "strike": 512.5,
+          "net_gamma_exp": 318388.72000000003
+        },
+        {
+          "strike": 515.0,
+          "net_gamma_exp": 545674.74
+        },
+        {
+          "strike": 517.5,
+          "net_gamma_exp": 83604.68
+        },
+        {
+          "strike": 520.0,
+          "net_gamma_exp": 664226.2
+        },
+        {
+          "strike": 522.5,
+          "net_gamma_exp": 65139.41
+        },
+        {
+          "strike": 525.0,
+          "net_gamma_exp": 2522121.23
+        },
+        {
+          "strike": 527.5,
+          "net_gamma_exp": 44510.04
+        },
+        {
+          "strike": 530.0,
+          "net_gamma_exp": 1999953.8599999996
+        },
+        {
+          "strike": 535.0,
+          "net_gamma_exp": -176316.31999999995
+        },
+        {
+          "strike": 540.0,
+          "net_gamma_exp": 427779.52
+        },
+        {
+          "strike": 545.0,
+          "net_gamma_exp": 513313.48
+        },
+        {
+          "strike": 550.0,
+          "net_gamma_exp": 3784943.5500000003
+        },
+        {
+          "strike": 555.0,
+          "net_gamma_exp": 389897.17
+        },
+        {
+          "strike": 560.0,
+          "net_gamma_exp": 318198.65
+        },
+        {
+          "strike": 565.0,
+          "net_gamma_exp": 149150.66999999998
+        },
+        {
+          "strike": 570.0,
+          "net_gamma_exp": 728940.4199999999
+        }
+      ]
+    },
+    {
+      "ticker": "ABBV",
+      "price": 217.49,
+      "gamma_flip": null,
+      "net_gamma": 10429580.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Healthcare",
+      "market_cap": 384688128000,
+      "gamma_profile": [
+        {
+          "strike": 185.0,
+          "net_gamma_exp": -917228.88
+        },
+        {
+          "strike": 187.5,
+          "net_gamma_exp": -5667.51
+        },
+        {
+          "strike": 190.0,
+          "net_gamma_exp": -1181174.06
+        },
+        {
+          "strike": 192.5,
+          "net_gamma_exp": -10217.25
+        },
+        {
+          "strike": 195.0,
+          "net_gamma_exp": -1077066.56
+        },
+        {
+          "strike": 197.5,
+          "net_gamma_exp": -6605.129999999999
+        },
+        {
+          "strike": 200.0,
+          "net_gamma_exp": -5755917.97
+        },
+        {
+          "strike": 202.5,
+          "net_gamma_exp": -22678.22
+        },
+        {
+          "strike": 205.0,
+          "net_gamma_exp": 38426.48999999999
+        },
+        {
+          "strike": 207.5,
+          "net_gamma_exp": 100842.71999999999
+        },
+        {
+          "strike": 210.0,
+          "net_gamma_exp": -2000362.0899999999
+        },
+        {
+          "strike": 212.5,
+          "net_gamma_exp": 461498.69999999995
+        },
+        {
+          "strike": 215.0,
+          "net_gamma_exp": 2216819.01
+        },
+        {
+          "strike": 217.5,
+          "net_gamma_exp": 1692350.73
+        },
+        {
+          "strike": 220.0,
+          "net_gamma_exp": 4800194.48
+        },
+        {
+          "strike": 222.5,
+          "net_gamma_exp": 1944285.6099999999
+        },
+        {
+          "strike": 225.0,
+          "net_gamma_exp": 1385395.14
+        },
+        {
+          "strike": 227.5,
+          "net_gamma_exp": 128394.61
+        },
+        {
+          "strike": 230.0,
+          "net_gamma_exp": 3317102.7199999997
+        },
+        {
+          "strike": 232.5,
+          "net_gamma_exp": 14000.34
+        },
+        {
+          "strike": 235.0,
+          "net_gamma_exp": 956555.2100000001
+        },
+        {
+          "strike": 240.0,
+          "net_gamma_exp": 2215538.21
+        },
+        {
+          "strike": 245.0,
+          "net_gamma_exp": 84639.08
+        },
+        {
+          "strike": 250.0,
+          "net_gamma_exp": 1582481.19
+        }
+      ]
+    },
+    {
+      "ticker": "JNJ",
+      "price": 244.44,
+      "gamma_flip": null,
+      "net_gamma": 35733806.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Healthcare",
+      "market_cap": 589075709952,
+      "gamma_profile": [
+        {
+          "strike": 210.0,
+          "net_gamma_exp": 377785.5800000001
+        },
+        {
+          "strike": 212.5,
+          "net_gamma_exp": -519.59
+        },
+        {
+          "strike": 215.0,
+          "net_gamma_exp": -39407.45
+        },
+        {
+          "strike": 217.5,
+          "net_gamma_exp": -33934.31
+        },
+        {
+          "strike": 220.0,
+          "net_gamma_exp": -1907731.5999999999
+        },
+        {
+          "strike": 222.5,
+          "net_gamma_exp": -211512.3
+        },
+        {
+          "strike": 225.0,
+          "net_gamma_exp": -247953.45
+        },
+        {
+          "strike": 227.5,
+          "net_gamma_exp": -60126.79
+        },
+        {
+          "strike": 230.0,
+          "net_gamma_exp": -5095728.54
+        },
+        {
+          "strike": 232.5,
+          "net_gamma_exp": -186421.74
+        },
+        {
+          "strike": 235.0,
+          "net_gamma_exp": -1297269.95
+        },
+        {
+          "strike": 237.5,
+          "net_gamma_exp": -820447.53
+        },
+        {
+          "strike": 240.0,
+          "net_gamma_exp": 7962929.09
+        },
+        {
+          "strike": 242.5,
+          "net_gamma_exp": 2504701.09
+        },
+        {
+          "strike": 245.0,
+          "net_gamma_exp": 7888671.14
+        },
+        {
+          "strike": 247.5,
+          "net_gamma_exp": 1819178.88
+        },
+        {
+          "strike": 250.0,
+          "net_gamma_exp": 12276429.1
+        },
+        {
+          "strike": 252.5,
+          "net_gamma_exp": 261502.41999999998
+        },
+        {
+          "strike": 255.0,
+          "net_gamma_exp": 1190251.27
+        },
+        {
+          "strike": 257.5,
+          "net_gamma_exp": 42665.94
+        },
+        {
+          "strike": 260.0,
+          "net_gamma_exp": 8606262.379999999
+        },
+        {
+          "strike": 262.5,
+          "net_gamma_exp": 32781.22
+        },
+        {
+          "strike": 265.0,
+          "net_gamma_exp": 130679.13
+        },
+        {
+          "strike": 270.0,
+          "net_gamma_exp": 1879505.08
+        },
+        {
+          "strike": 275.0,
+          "net_gamma_exp": 19926.67
+        },
+        {
+          "strike": 280.0,
+          "net_gamma_exp": 125776.56
+        }
+      ]
+    },
+    {
+      "ticker": "MRK",
+      "price": 120.29,
+      "gamma_flip": null,
+      "net_gamma": 45067142.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Healthcare",
+      "market_cap": 297404039168,
+      "gamma_profile": [
+        {
+          "strike": 103.0,
+          "net_gamma_exp": -115.42
+        },
+        {
+          "strike": 104.0,
+          "net_gamma_exp": -42214.41
+        },
+        {
+          "strike": 105.0,
+          "net_gamma_exp": -810607.0900000001
+        },
+        {
+          "strike": 106.0,
+          "net_gamma_exp": -11646.79
+        },
+        {
+          "strike": 107.0,
+          "net_gamma_exp": -34546.16
+        },
+        {
+          "strike": 108.0,
+          "net_gamma_exp": -39531.86
+        },
+        {
+          "strike": 109.0,
+          "net_gamma_exp": -14664.42
+        },
+        {
+          "strike": 110.0,
+          "net_gamma_exp": -405796.47000000003
+        },
+        {
+          "strike": 111.0,
+          "net_gamma_exp": -15890.29
+        },
+        {
+          "strike": 112.0,
+          "net_gamma_exp": -19213.11
+        },
+        {
+          "strike": 113.0,
+          "net_gamma_exp": -12240.23
+        },
+        {
+          "strike": 114.0,
+          "net_gamma_exp": -58910.47
+        },
+        {
+          "strike": 115.0,
+          "net_gamma_exp": 7057363.16
+        },
+        {
+          "strike": 116.0,
+          "net_gamma_exp": 118213.37
+        },
+        {
+          "strike": 117.0,
+          "net_gamma_exp": 522320.51999999996
+        },
+        {
+          "strike": 118.0,
+          "net_gamma_exp": -1395282.8
+        },
+        {
+          "strike": 119.0,
+          "net_gamma_exp": 628343.03
+        },
+        {
+          "strike": 120.0,
+          "net_gamma_exp": 5929816.33
+        },
+        {
+          "strike": 121.0,
+          "net_gamma_exp": 1920591.77
+        },
+        {
+          "strike": 122.0,
+          "net_gamma_exp": 7538364.66
+        },
+        {
+          "strike": 123.0,
+          "net_gamma_exp": 616596.84
+        },
+        {
+          "strike": 124.0,
+          "net_gamma_exp": 629597.11
+        },
+        {
+          "strike": 125.0,
+          "net_gamma_exp": 8806364.47
+        },
+        {
+          "strike": 126.0,
+          "net_gamma_exp": 727023.02
+        },
+        {
+          "strike": 127.0,
+          "net_gamma_exp": 618706.8200000001
+        },
+        {
+          "strike": 128.0,
+          "net_gamma_exp": 195335.29
+        },
+        {
+          "strike": 129.0,
+          "net_gamma_exp": 53777.39
+        },
+        {
+          "strike": 130.0,
+          "net_gamma_exp": 7933063.06
+        },
+        {
+          "strike": 131.0,
+          "net_gamma_exp": 26780.03
+        },
+        {
+          "strike": 132.0,
+          "net_gamma_exp": 451.76
+        },
+        {
+          "strike": 133.0,
+          "net_gamma_exp": 593.73
+        },
+        {
+          "strike": 135.0,
+          "net_gamma_exp": 2769125.3200000003
+        }
+      ]
+    },
+    {
+      "ticker": "CVX",
+      "price": 206.9,
+      "gamma_flip": null,
+      "net_gamma": 41854749.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Energy",
+      "market_cap": 413666246656,
+      "gamma_profile": [
+        {
+          "strike": 177.5,
+          "net_gamma_exp": -637.08
+        },
+        {
+          "strike": 180.0,
+          "net_gamma_exp": -432642.75
+        },
+        {
+          "strike": 182.5,
+          "net_gamma_exp": -14908.23
+        },
+        {
+          "strike": 185.0,
+          "net_gamma_exp": -2882886.3000000003
+        },
+        {
+          "strike": 187.5,
+          "net_gamma_exp": -76744.18999999999
+        },
+        {
+          "strike": 190.0,
+          "net_gamma_exp": -1870802.9100000001
+        },
+        {
+          "strike": 192.5,
+          "net_gamma_exp": -248210.90999999997
+        },
+        {
+          "strike": 195.0,
+          "net_gamma_exp": 1615986.5699999998
+        },
+        {
+          "strike": 197.5,
+          "net_gamma_exp": -1297831.62
+        },
+        {
+          "strike": 200.0,
+          "net_gamma_exp": 8490281.89
+        },
+        {
+          "strike": 202.5,
+          "net_gamma_exp": -3196315.47
+        },
+        {
+          "strike": 205.0,
+          "net_gamma_exp": 706104.39
+        },
+        {
+          "strike": 207.5,
+          "net_gamma_exp": 4722510.34
+        },
+        {
+          "strike": 210.0,
+          "net_gamma_exp": 8884257.280000001
+        },
+        {
+          "strike": 212.5,
+          "net_gamma_exp": 2435848.19
+        },
+        {
+          "strike": 215.0,
+          "net_gamma_exp": 4507950.36
+        },
+        {
+          "strike": 217.5,
+          "net_gamma_exp": 2323924.4299999997
+        },
+        {
+          "strike": 220.0,
+          "net_gamma_exp": 10539927.639999999
+        },
+        {
+          "strike": 222.5,
+          "net_gamma_exp": 271167.95
+        },
+        {
+          "strike": 225.0,
+          "net_gamma_exp": 2608558.36
+        },
+        {
+          "strike": 227.5,
+          "net_gamma_exp": 82391.51999999999
+        },
+        {
+          "strike": 230.0,
+          "net_gamma_exp": 2144351.84
+        },
+        {
+          "strike": 232.5,
+          "net_gamma_exp": 500.66
+        },
+        {
+          "strike": 235.0,
+          "net_gamma_exp": 134358.02
+        }
+      ]
+    },
+    {
+      "ticker": "BAC",
+      "price": 48.75,
+      "gamma_flip": null,
+      "net_gamma": 29991339.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Financial Services",
+      "market_cap": 349863247872,
+      "gamma_profile": [
+        {
+          "strike": 41.5,
+          "net_gamma_exp": -10903.67
+        },
+        {
+          "strike": 42.0,
+          "net_gamma_exp": -783069.03
+        },
+        {
+          "strike": 42.5,
+          "net_gamma_exp": -50944.58
+        },
+        {
+          "strike": 43.0,
+          "net_gamma_exp": -101772.15
+        },
+        {
+          "strike": 43.5,
+          "net_gamma_exp": -235611.27999999997
+        },
+        {
+          "strike": 44.0,
+          "net_gamma_exp": -625602.73
+        },
+        {
+          "strike": 44.5,
+          "net_gamma_exp": -976470.78
+        },
+        {
+          "strike": 45.0,
+          "net_gamma_exp": -7371646.220000001
+        },
+        {
+          "strike": 45.5,
+          "net_gamma_exp": -364839.98
+        },
+        {
+          "strike": 46.0,
+          "net_gamma_exp": -912367.42
+        },
+        {
+          "strike": 46.5,
+          "net_gamma_exp": -1849890.8599999999
+        },
+        {
+          "strike": 47.0,
+          "net_gamma_exp": -416399.51
+        },
+        {
+          "strike": 47.5,
+          "net_gamma_exp": 14740.919999999998
+        },
+        {
+          "strike": 48.0,
+          "net_gamma_exp": -5953754.45
+        },
+        {
+          "strike": 48.5,
+          "net_gamma_exp": 6460108.83
+        },
+        {
+          "strike": 49.0,
+          "net_gamma_exp": 4091424.2600000002
+        },
+        {
+          "strike": 49.5,
+          "net_gamma_exp": 6527216.25
+        },
+        {
+          "strike": 50.0,
+          "net_gamma_exp": 15271396.1
+        },
+        {
+          "strike": 50.5,
+          "net_gamma_exp": 640634.42
+        },
+        {
+          "strike": 51.0,
+          "net_gamma_exp": 6525746.81
+        },
+        {
+          "strike": 51.5,
+          "net_gamma_exp": 259337.93
+        },
+        {
+          "strike": 52.0,
+          "net_gamma_exp": 1780024.04
+        },
+        {
+          "strike": 52.5,
+          "net_gamma_exp": 3063053.0999999996
+        },
+        {
+          "strike": 53.0,
+          "net_gamma_exp": 769264.26
+        },
+        {
+          "strike": 54.0,
+          "net_gamma_exp": 505341.91
+        },
+        {
+          "strike": 55.0,
+          "net_gamma_exp": 3107960.9000000004
+        },
+        {
+          "strike": 56.0,
+          "net_gamma_exp": 31493.800000000003
+        }
+      ]
+    },
+    {
+      "ticker": "COST",
+      "price": 996.43,
+      "gamma_flip": null,
+      "net_gamma": 92756555.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Consumer Defensive",
+      "market_cap": 442284802048,
+      "gamma_profile": [
+        {
+          "strike": 970.0,
+          "net_gamma_exp": -2779152.24
+        },
+        {
+          "strike": 972.5,
+          "net_gamma_exp": -2308206.82
+        },
+        {
+          "strike": 975.0,
+          "net_gamma_exp": -1086535.25
+        },
+        {
+          "strike": 977.5,
+          "net_gamma_exp": -141617.57
+        },
+        {
+          "strike": 980.0,
+          "net_gamma_exp": -1234329.82
+        },
+        {
+          "strike": 982.5,
+          "net_gamma_exp": -519749.9
+        },
+        {
+          "strike": 985.0,
+          "net_gamma_exp": -1171022.6300000001
+        },
+        {
+          "strike": 987.5,
+          "net_gamma_exp": -749421.1699999999
+        },
+        {
+          "strike": 990.0,
+          "net_gamma_exp": 4522841.77
+        },
+        {
+          "strike": 992.5,
+          "net_gamma_exp": 1447886.93
+        },
+        {
+          "strike": 995.0,
+          "net_gamma_exp": 2602438.42
+        },
+        {
+          "strike": 997.5,
+          "net_gamma_exp": 558885.13
+        },
+        {
+          "strike": 1000.0,
+          "net_gamma_exp": 18307992.25
+        },
+        {
+          "strike": 1002.5,
+          "net_gamma_exp": 1872131.0
+        },
+        {
+          "strike": 1005.0,
+          "net_gamma_exp": 9928567.37
+        },
+        {
+          "strike": 1007.5,
+          "net_gamma_exp": 4311071.18
+        },
+        {
+          "strike": 1010.0,
+          "net_gamma_exp": 13131554.65
+        },
+        {
+          "strike": 1012.5,
+          "net_gamma_exp": 918970.53
+        },
+        {
+          "strike": 1015.0,
+          "net_gamma_exp": 10703705.85
+        },
+        {
+          "strike": 1017.5,
+          "net_gamma_exp": 2070598.89
+        },
+        {
+          "strike": 1020.0,
+          "net_gamma_exp": 11974323.34
+        },
+        {
+          "strike": 1025.0,
+          "net_gamma_exp": 11646195.26
+        },
+        {
+          "strike": 1030.0,
+          "net_gamma_exp": 11210875.82
+        },
+        {
+          "strike": 1035.0,
+          "net_gamma_exp": 4855191.68
+        },
+        {
+          "strike": 1040.0,
+          "net_gamma_exp": 5229889.99
+        },
+        {
+          "strike": 1045.0,
+          "net_gamma_exp": 2284039.82
+        },
+        {
+          "strike": 1050.0,
+          "net_gamma_exp": 5949441.82
+        },
+        {
+          "strike": 1055.0,
+          "net_gamma_exp": 1218203.73
+        },
+        {
+          "strike": 1060.0,
+          "net_gamma_exp": 2828887.86
+        },
+        {
+          "strike": 1065.0,
+          "net_gamma_exp": 5976219.4
+        },
+        {
+          "strike": 1070.0,
+          "net_gamma_exp": 1169367.81
+        },
+        {
+          "strike": 1075.0,
+          "net_gamma_exp": 888834.17
+        },
+        {
+          "strike": 1080.0,
+          "net_gamma_exp": 1459555.65
+        },
+        {
+          "strike": 1085.0,
+          "net_gamma_exp": 483108.79000000004
+        },
+        {
+          "strike": 1090.0,
+          "net_gamma_exp": 758906.8400000001
+        },
+        {
+          "strike": 1095.0,
+          "net_gamma_exp": 62355.69
+        },
+        {
+          "strike": 1100.0,
+          "net_gamma_exp": 2243340.11
+        },
+        {
+          "strike": 1110.0,
+          "net_gamma_exp": 63159.990000000005
+        },
+        {
+          "strike": 1120.0,
+          "net_gamma_exp": 646219.49
+        },
+        {
+          "strike": 1140.0,
+          "net_gamma_exp": 251960.16999999998
+        }
+      ]
+    },
+    {
+      "ticker": "AMD",
+      "price": 203.43,
+      "gamma_flip": null,
+      "net_gamma": 6826180.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Technology",
+      "market_cap": 331674484736,
+      "gamma_profile": [
+        {
+          "strike": 175.0,
+          "net_gamma_exp": -6783497.69
+        },
+        {
+          "strike": 177.5,
+          "net_gamma_exp": -572197.04
+        },
+        {
+          "strike": 180.0,
+          "net_gamma_exp": -6933382.779999999
+        },
+        {
+          "strike": 182.5,
+          "net_gamma_exp": -791571.5
+        },
+        {
+          "strike": 185.0,
+          "net_gamma_exp": -6915127.58
+        },
+        {
+          "strike": 187.5,
+          "net_gamma_exp": -1016861.74
+        },
+        {
+          "strike": 190.0,
+          "net_gamma_exp": -12939319.65
+        },
+        {
+          "strike": 192.5,
+          "net_gamma_exp": -7117469.8
+        },
+        {
+          "strike": 195.0,
+          "net_gamma_exp": -6551488.8
+        },
+        {
+          "strike": 197.5,
+          "net_gamma_exp": -2987753.3600000003
+        },
+        {
+          "strike": 200.0,
+          "net_gamma_exp": -12561570.7
+        },
+        {
+          "strike": 202.5,
+          "net_gamma_exp": -4062353.8499999996
+        },
+        {
+          "strike": 205.0,
+          "net_gamma_exp": 5623636.74
+        },
+        {
+          "strike": 207.5,
+          "net_gamma_exp": 14544071.05
+        },
+        {
+          "strike": 210.0,
+          "net_gamma_exp": 13443108.16
+        },
+        {
+          "strike": 212.5,
+          "net_gamma_exp": 3471559.9
+        },
+        {
+          "strike": 215.0,
+          "net_gamma_exp": 4770853.0600000005
+        },
+        {
+          "strike": 217.5,
+          "net_gamma_exp": 1275536.15
+        },
+        {
+          "strike": 220.0,
+          "net_gamma_exp": 12756665.6
+        },
+        {
+          "strike": 222.5,
+          "net_gamma_exp": 862729.11
+        },
+        {
+          "strike": 225.0,
+          "net_gamma_exp": 2539763.0
+        },
+        {
+          "strike": 227.5,
+          "net_gamma_exp": 263411.68
+        },
+        {
+          "strike": 230.0,
+          "net_gamma_exp": 8153757.01
+        },
+        {
+          "strike": 232.5,
+          "net_gamma_exp": 536876.68
+        }
+      ]
+    },
+    {
+      "ticker": "WMT",
+      "price": 124.28,
+      "gamma_flip": null,
+      "net_gamma": 15949891.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Consumer Defensive",
+      "market_cap": 990810210304,
+      "gamma_profile": [
+        {
+          "strike": 106.0,
+          "net_gamma_exp": -7348.06
+        },
+        {
+          "strike": 107.0,
+          "net_gamma_exp": -4607.45
+        },
+        {
+          "strike": 108.0,
+          "net_gamma_exp": -10639.11
+        },
+        {
+          "strike": 109.0,
+          "net_gamma_exp": -873928.39
+        },
+        {
+          "strike": 110.0,
+          "net_gamma_exp": -6983309.49
+        },
+        {
+          "strike": 111.0,
+          "net_gamma_exp": -33990.21
+        },
+        {
+          "strike": 112.0,
+          "net_gamma_exp": -377035.52999999997
+        },
+        {
+          "strike": 113.0,
+          "net_gamma_exp": -2233719.38
+        },
+        {
+          "strike": 114.0,
+          "net_gamma_exp": -256240.41
+        },
+        {
+          "strike": 115.0,
+          "net_gamma_exp": -11357121.34
+        },
+        {
+          "strike": 116.0,
+          "net_gamma_exp": -348284.79000000004
+        },
+        {
+          "strike": 117.0,
+          "net_gamma_exp": -534131.64
+        },
+        {
+          "strike": 118.0,
+          "net_gamma_exp": -538109.7
+        },
+        {
+          "strike": 119.0,
+          "net_gamma_exp": -1834477.9100000001
+        },
+        {
+          "strike": 120.0,
+          "net_gamma_exp": -8585664.0
+        },
+        {
+          "strike": 121.0,
+          "net_gamma_exp": -807657.0399999999
+        },
+        {
+          "strike": 122.0,
+          "net_gamma_exp": -1159188.02
+        },
+        {
+          "strike": 123.0,
+          "net_gamma_exp": -2683618.1599999997
+        },
+        {
+          "strike": 124.0,
+          "net_gamma_exp": 2022274.48
+        },
+        {
+          "strike": 125.0,
+          "net_gamma_exp": 10006791.129999999
+        },
+        {
+          "strike": 126.0,
+          "net_gamma_exp": 7369944.04
+        },
+        {
+          "strike": 127.0,
+          "net_gamma_exp": 2986783.06
+        },
+        {
+          "strike": 128.0,
+          "net_gamma_exp": 2422983.6999999997
+        },
+        {
+          "strike": 129.0,
+          "net_gamma_exp": 485460.23
+        },
+        {
+          "strike": 130.0,
+          "net_gamma_exp": 15101785.32
+        },
+        {
+          "strike": 131.0,
+          "net_gamma_exp": 581315.93
+        },
+        {
+          "strike": 132.0,
+          "net_gamma_exp": 358824.14
+        },
+        {
+          "strike": 133.0,
+          "net_gamma_exp": 881715.92
+        },
+        {
+          "strike": 134.0,
+          "net_gamma_exp": 96047.56
+        },
+        {
+          "strike": 135.0,
+          "net_gamma_exp": 11298662.43
+        },
+        {
+          "strike": 136.0,
+          "net_gamma_exp": 391565.07
+        },
+        {
+          "strike": 137.0,
+          "net_gamma_exp": 133307.77
+        },
+        {
+          "strike": 138.0,
+          "net_gamma_exp": 119429.9
+        },
+        {
+          "strike": 139.0,
+          "net_gamma_exp": 25320.480000000003
+        },
+        {
+          "strike": 140.0,
+          "net_gamma_exp": 2987871.59
+        },
+        {
+          "strike": 141.0,
+          "net_gamma_exp": 3197.68
+        }
+      ]
+    },
+    {
+      "ticker": "NFLX",
+      "price": 96.15,
+      "gamma_flip": null,
+      "net_gamma": 105990433.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Communication Services",
+      "market_cap": 407857692672,
+      "gamma_profile": [
+        {
+          "strike": 82.0,
+          "net_gamma_exp": -338568.38
+        },
+        {
+          "strike": 83.0,
+          "net_gamma_exp": -205229.96
+        },
+        {
+          "strike": 84.0,
+          "net_gamma_exp": -117152.1
+        },
+        {
+          "strike": 85.0,
+          "net_gamma_exp": -2193038.0
+        },
+        {
+          "strike": 86.0,
+          "net_gamma_exp": -2624034.06
+        },
+        {
+          "strike": 87.0,
+          "net_gamma_exp": -723839.1399999999
+        },
+        {
+          "strike": 88.0,
+          "net_gamma_exp": -2172179.17
+        },
+        {
+          "strike": 89.0,
+          "net_gamma_exp": -905382.76
+        },
+        {
+          "strike": 90.0,
+          "net_gamma_exp": -1374654.77
+        },
+        {
+          "strike": 91.0,
+          "net_gamma_exp": -180074.17000000004
+        },
+        {
+          "strike": 92.0,
+          "net_gamma_exp": -1693616.39
+        },
+        {
+          "strike": 93.0,
+          "net_gamma_exp": -3703648.73
+        },
+        {
+          "strike": 94.0,
+          "net_gamma_exp": 8139177.94
+        },
+        {
+          "strike": 95.0,
+          "net_gamma_exp": 17790816.59
+        },
+        {
+          "strike": 96.0,
+          "net_gamma_exp": 8362897.33
+        },
+        {
+          "strike": 97.0,
+          "net_gamma_exp": 22041056.52
+        },
+        {
+          "strike": 98.0,
+          "net_gamma_exp": 13551645.969999999
+        },
+        {
+          "strike": 99.0,
+          "net_gamma_exp": 2908773.85
+        },
+        {
+          "strike": 100.0,
+          "net_gamma_exp": 23122017.58
+        },
+        {
+          "strike": 101.0,
+          "net_gamma_exp": 1477226.3099999998
+        },
+        {
+          "strike": 102.0,
+          "net_gamma_exp": 2797458.97
+        },
+        {
+          "strike": 103.0,
+          "net_gamma_exp": 1052922.38
+        },
+        {
+          "strike": 104.0,
+          "net_gamma_exp": 5450742.26
+        },
+        {
+          "strike": 105.0,
+          "net_gamma_exp": 7251641.76
+        },
+        {
+          "strike": 106.0,
+          "net_gamma_exp": 947571.8600000001
+        },
+        {
+          "strike": 107.0,
+          "net_gamma_exp": 107963.12
+        },
+        {
+          "strike": 108.0,
+          "net_gamma_exp": 3028248.52
+        },
+        {
+          "strike": 109.0,
+          "net_gamma_exp": 54717.7
+        },
+        {
+          "strike": 110.0,
+          "net_gamma_exp": 2998608.87
+        }
+      ]
+    },
+    {
+      "ticker": "PEP",
+      "price": 155.29,
+      "gamma_flip": null,
+      "net_gamma": 18945408.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Consumer Defensive",
+      "market_cap": 212272250880,
+      "gamma_profile": [
+        {
+          "strike": 135.0,
+          "net_gamma_exp": -559463.87
+        },
+        {
+          "strike": 138.0,
+          "net_gamma_exp": 148.2
+        },
+        {
+          "strike": 139.0,
+          "net_gamma_exp": -83905.98000000001
+        },
+        {
+          "strike": 140.0,
+          "net_gamma_exp": -794594.3
+        },
+        {
+          "strike": 141.0,
+          "net_gamma_exp": -5042.23
+        },
+        {
+          "strike": 142.0,
+          "net_gamma_exp": -13614.81
+        },
+        {
+          "strike": 143.0,
+          "net_gamma_exp": -41106.850000000006
+        },
+        {
+          "strike": 144.0,
+          "net_gamma_exp": -122423.23999999999
+        },
+        {
+          "strike": 145.0,
+          "net_gamma_exp": -855311.4500000001
+        },
+        {
+          "strike": 146.0,
+          "net_gamma_exp": -24597.33
+        },
+        {
+          "strike": 147.0,
+          "net_gamma_exp": 46885.87
+        },
+        {
+          "strike": 148.0,
+          "net_gamma_exp": -232152.72
+        },
+        {
+          "strike": 149.0,
+          "net_gamma_exp": -94170.87000000001
+        },
+        {
+          "strike": 150.0,
+          "net_gamma_exp": 278224.4799999998
+        },
+        {
+          "strike": 152.5,
+          "net_gamma_exp": -449563.32999999996
+        },
+        {
+          "strike": 155.0,
+          "net_gamma_exp": 1873833.35
+        },
+        {
+          "strike": 157.5,
+          "net_gamma_exp": 1207737.23
+        },
+        {
+          "strike": 160.0,
+          "net_gamma_exp": 11883554.909999998
+        },
+        {
+          "strike": 162.5,
+          "net_gamma_exp": 1043295.7599999999
+        },
+        {
+          "strike": 165.0,
+          "net_gamma_exp": 2009137.13
+        },
+        {
+          "strike": 167.5,
+          "net_gamma_exp": 235521.57
+        },
+        {
+          "strike": 170.0,
+          "net_gamma_exp": 2415963.76
+        },
+        {
+          "strike": 172.5,
+          "net_gamma_exp": 106633.43
+        },
+        {
+          "strike": 175.0,
+          "net_gamma_exp": 1105998.9
+        },
+        {
+          "strike": 177.5,
+          "net_gamma_exp": 5477.89
+        }
+      ]
+    },
+    {
+      "ticker": "KO",
+      "price": 76.05,
+      "gamma_flip": null,
+      "net_gamma": 37211801.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Consumer Defensive",
+      "market_cap": 327330856960,
+      "gamma_profile": [
+        {
+          "strike": 65.0,
+          "net_gamma_exp": -786124.95
+        },
+        {
+          "strike": 66.0,
+          "net_gamma_exp": -5713.37
+        },
+        {
+          "strike": 67.0,
+          "net_gamma_exp": -11992.390000000001
+        },
+        {
+          "strike": 67.5,
+          "net_gamma_exp": -2653411.0300000003
+        },
+        {
+          "strike": 68.0,
+          "net_gamma_exp": -5656.780000000001
+        },
+        {
+          "strike": 69.0,
+          "net_gamma_exp": -25722.09
+        },
+        {
+          "strike": 70.0,
+          "net_gamma_exp": -1736092.36
+        },
+        {
+          "strike": 71.0,
+          "net_gamma_exp": -253183.2
+        },
+        {
+          "strike": 72.0,
+          "net_gamma_exp": -302682.44
+        },
+        {
+          "strike": 72.5,
+          "net_gamma_exp": -2662258.17
+        },
+        {
+          "strike": 73.0,
+          "net_gamma_exp": -306136.76
+        },
+        {
+          "strike": 74.0,
+          "net_gamma_exp": -140213.73
+        },
+        {
+          "strike": 75.0,
+          "net_gamma_exp": 2216264.670000001
+        },
+        {
+          "strike": 76.0,
+          "net_gamma_exp": 15280806.069999998
+        },
+        {
+          "strike": 77.0,
+          "net_gamma_exp": 13693965.83
+        },
+        {
+          "strike": 77.5,
+          "net_gamma_exp": -683955.97
+        },
+        {
+          "strike": 78.0,
+          "net_gamma_exp": 2451578.1
+        },
+        {
+          "strike": 79.0,
+          "net_gamma_exp": 2470263.41
+        },
+        {
+          "strike": 80.0,
+          "net_gamma_exp": 6819990.84
+        },
+        {
+          "strike": 81.0,
+          "net_gamma_exp": 354256.76
+        },
+        {
+          "strike": 82.0,
+          "net_gamma_exp": 72841.07
+        },
+        {
+          "strike": 82.5,
+          "net_gamma_exp": 2120464.01
+        },
+        {
+          "strike": 83.0,
+          "net_gamma_exp": 122906.14
+        },
+        {
+          "strike": 84.0,
+          "net_gamma_exp": 38683.130000000005
+        },
+        {
+          "strike": 85.0,
+          "net_gamma_exp": 922441.53
+        },
+        {
+          "strike": 86.0,
+          "net_gamma_exp": 131.32
+        },
+        {
+          "strike": 87.0,
+          "net_gamma_exp": 4285.5
+        }
+      ]
+    },
+    {
+      "ticker": "CSCO",
+      "price": 77.59,
+      "gamma_flip": null,
+      "net_gamma": 11700464.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Technology",
+      "market_cap": 306565414912,
+      "gamma_profile": [
+        {
+          "strike": 66.0,
+          "net_gamma_exp": -2676.57
+        },
+        {
+          "strike": 67.0,
+          "net_gamma_exp": -6176.21
+        },
+        {
+          "strike": 67.5,
+          "net_gamma_exp": -843505.6799999999
+        },
+        {
+          "strike": 68.0,
+          "net_gamma_exp": -13746.900000000001
+        },
+        {
+          "strike": 69.0,
+          "net_gamma_exp": 7129.279999999999
+        },
+        {
+          "strike": 70.0,
+          "net_gamma_exp": -520932.27
+        },
+        {
+          "strike": 71.0,
+          "net_gamma_exp": -500157.73
+        },
+        {
+          "strike": 72.0,
+          "net_gamma_exp": -346449.08
+        },
+        {
+          "strike": 72.5,
+          "net_gamma_exp": -822568.2000000001
+        },
+        {
+          "strike": 73.0,
+          "net_gamma_exp": 312710.51999999996
+        },
+        {
+          "strike": 74.0,
+          "net_gamma_exp": -813834.42
+        },
+        {
+          "strike": 75.0,
+          "net_gamma_exp": -1647932.71
+        },
+        {
+          "strike": 76.0,
+          "net_gamma_exp": -327021.87
+        },
+        {
+          "strike": 77.0,
+          "net_gamma_exp": -1129362.3399999999
+        },
+        {
+          "strike": 77.5,
+          "net_gamma_exp": 1094986.8800000001
+        },
+        {
+          "strike": 78.0,
+          "net_gamma_exp": -557412.25
+        },
+        {
+          "strike": 79.0,
+          "net_gamma_exp": 429012.47000000003
+        },
+        {
+          "strike": 80.0,
+          "net_gamma_exp": 6112919.43
+        },
+        {
+          "strike": 81.0,
+          "net_gamma_exp": -65208.34000000001
+        },
+        {
+          "strike": 82.0,
+          "net_gamma_exp": 720312.61
+        },
+        {
+          "strike": 82.5,
+          "net_gamma_exp": 3169953.1999999997
+        },
+        {
+          "strike": 83.0,
+          "net_gamma_exp": 450000.85000000003
+        },
+        {
+          "strike": 84.0,
+          "net_gamma_exp": 172323.75
+        },
+        {
+          "strike": 85.0,
+          "net_gamma_exp": 3987158.5
+        },
+        {
+          "strike": 86.0,
+          "net_gamma_exp": 814114.7999999999
+        },
+        {
+          "strike": 87.0,
+          "net_gamma_exp": 234654.97999999998
+        },
+        {
+          "strike": 87.5,
+          "net_gamma_exp": 808783.64
+        },
+        {
+          "strike": 88.0,
+          "net_gamma_exp": 222505.93
+        },
+        {
+          "strike": 89.0,
+          "net_gamma_exp": 12477.02
+        }
+      ]
+    },
+    {
+      "ticker": "ABT",
+      "price": 102.67,
+      "gamma_flip": null,
+      "net_gamma": 1520784.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Healthcare",
+      "market_cap": 178407899136,
+      "gamma_profile": [
+        {
+          "strike": 90.0,
+          "net_gamma_exp": -56207.65
+        },
+        {
+          "strike": 95.0,
+          "net_gamma_exp": -325574.72
+        },
+        {
+          "strike": 96.0,
+          "net_gamma_exp": -12698.07
+        },
+        {
+          "strike": 97.0,
+          "net_gamma_exp": -101706.84
+        },
+        {
+          "strike": 97.5,
+          "net_gamma_exp": -73649.87
+        },
+        {
+          "strike": 98.0,
+          "net_gamma_exp": -24080.03
+        },
+        {
+          "strike": 99.0,
+          "net_gamma_exp": -96188.93000000001
+        },
+        {
+          "strike": 100.0,
+          "net_gamma_exp": -670381.04
+        },
+        {
+          "strike": 101.0,
+          "net_gamma_exp": -227701.16999999998
+        },
+        {
+          "strike": 102.0,
+          "net_gamma_exp": 220679.25
+        },
+        {
+          "strike": 103.0,
+          "net_gamma_exp": -66295.98000000001
+        },
+        {
+          "strike": 104.0,
+          "net_gamma_exp": 218235.53
+        },
+        {
+          "strike": 105.0,
+          "net_gamma_exp": 209648.91999999998
+        },
+        {
+          "strike": 106.0,
+          "net_gamma_exp": 421746.77
+        },
+        {
+          "strike": 107.0,
+          "net_gamma_exp": 34548.130000000005
+        },
+        {
+          "strike": 108.0,
+          "net_gamma_exp": 88974.26000000001
+        },
+        {
+          "strike": 109.0,
+          "net_gamma_exp": 146378.91
+        },
+        {
+          "strike": 110.0,
+          "net_gamma_exp": 478027.50999999995
+        },
+        {
+          "strike": 111.0,
+          "net_gamma_exp": 97957.0
+        },
+        {
+          "strike": 112.0,
+          "net_gamma_exp": 60136.57
+        },
+        {
+          "strike": 113.0,
+          "net_gamma_exp": 25561.96
+        },
+        {
+          "strike": 114.0,
+          "net_gamma_exp": 1674.48
+        },
+        {
+          "strike": 115.0,
+          "net_gamma_exp": 361698.36
+        },
+        {
+          "strike": 116.0,
+          "net_gamma_exp": 11730.439999999999
+        },
+        {
+          "strike": 117.0,
+          "net_gamma_exp": 27793.73
+        },
+        {
+          "strike": 118.0,
+          "net_gamma_exp": 32058.29
+        }
+      ]
+    },
+    {
+      "ticker": "ORCL",
+      "price": 147.11,
+      "gamma_flip": null,
+      "net_gamma": 12973593.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Technology",
+      "market_cap": 423095140352,
+      "gamma_profile": [
+        {
+          "strike": 126.0,
+          "net_gamma_exp": -13380.23
+        },
+        {
+          "strike": 127.0,
+          "net_gamma_exp": -978.21
+        },
+        {
+          "strike": 128.0,
+          "net_gamma_exp": -67140.77
+        },
+        {
+          "strike": 129.0,
+          "net_gamma_exp": 831.55
+        },
+        {
+          "strike": 130.0,
+          "net_gamma_exp": -3050240.0700000003
+        },
+        {
+          "strike": 131.0,
+          "net_gamma_exp": 2018.17
+        },
+        {
+          "strike": 132.0,
+          "net_gamma_exp": -13689.56
+        },
+        {
+          "strike": 133.0,
+          "net_gamma_exp": -266270.87
+        },
+        {
+          "strike": 134.0,
+          "net_gamma_exp": -310783.5
+        },
+        {
+          "strike": 135.0,
+          "net_gamma_exp": -5077739.26
+        },
+        {
+          "strike": 136.0,
+          "net_gamma_exp": -125145.84999999999
+        },
+        {
+          "strike": 137.0,
+          "net_gamma_exp": -265946.89
+        },
+        {
+          "strike": 138.0,
+          "net_gamma_exp": -1863111.96
+        },
+        {
+          "strike": 139.0,
+          "net_gamma_exp": -78564.22
+        },
+        {
+          "strike": 140.0,
+          "net_gamma_exp": -5688283.640000001
+        },
+        {
+          "strike": 141.0,
+          "net_gamma_exp": 277069.94999999995
+        },
+        {
+          "strike": 142.0,
+          "net_gamma_exp": 1091804.83
+        },
+        {
+          "strike": 143.0,
+          "net_gamma_exp": 902863.1399999999
+        },
+        {
+          "strike": 144.0,
+          "net_gamma_exp": 956071.08
+        },
+        {
+          "strike": 145.0,
+          "net_gamma_exp": -1762501.65
+        },
+        {
+          "strike": 146.0,
+          "net_gamma_exp": -66517.50000000001
+        },
+        {
+          "strike": 147.0,
+          "net_gamma_exp": 964111.4
+        },
+        {
+          "strike": 148.0,
+          "net_gamma_exp": 1980805.44
+        },
+        {
+          "strike": 149.0,
+          "net_gamma_exp": 511648.74
+        },
+        {
+          "strike": 150.0,
+          "net_gamma_exp": -677517.6100000001
+        },
+        {
+          "strike": 152.5,
+          "net_gamma_exp": 1472653.98
+        },
+        {
+          "strike": 155.0,
+          "net_gamma_exp": 4744819.2
+        },
+        {
+          "strike": 157.5,
+          "net_gamma_exp": 1201778.56
+        },
+        {
+          "strike": 160.0,
+          "net_gamma_exp": 3721416.62
+        },
+        {
+          "strike": 162.5,
+          "net_gamma_exp": 1721808.7
+        },
+        {
+          "strike": 165.0,
+          "net_gamma_exp": 7509084.5600000005
+        },
+        {
+          "strike": 167.5,
+          "net_gamma_exp": 121670.98999999999
+        }
+      ]
+    },
+    {
+      "ticker": "TXN",
+      "price": 194.14,
+      "gamma_flip": null,
+      "net_gamma": 5858020.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Technology",
+      "market_cap": 176757358592,
+      "gamma_profile": [
+        {
+          "strike": 167.5,
+          "net_gamma_exp": -636.61
+        },
+        {
+          "strike": 170.0,
+          "net_gamma_exp": -299752.38999999996
+        },
+        {
+          "strike": 172.5,
+          "net_gamma_exp": -6815.79
+        },
+        {
+          "strike": 175.0,
+          "net_gamma_exp": -594904.59
+        },
+        {
+          "strike": 177.5,
+          "net_gamma_exp": -21522.04
+        },
+        {
+          "strike": 180.0,
+          "net_gamma_exp": -186768.95
+        },
+        {
+          "strike": 182.5,
+          "net_gamma_exp": -139538.9
+        },
+        {
+          "strike": 185.0,
+          "net_gamma_exp": -774998.77
+        },
+        {
+          "strike": 187.5,
+          "net_gamma_exp": -785220.5900000001
+        },
+        {
+          "strike": 190.0,
+          "net_gamma_exp": -459623.02000000014
+        },
+        {
+          "strike": 192.5,
+          "net_gamma_exp": 92406.6
+        },
+        {
+          "strike": 195.0,
+          "net_gamma_exp": 3124235.92
+        },
+        {
+          "strike": 197.5,
+          "net_gamma_exp": 882083.94
+        },
+        {
+          "strike": 200.0,
+          "net_gamma_exp": 2820342.44
+        },
+        {
+          "strike": 202.5,
+          "net_gamma_exp": 126709.22
+        },
+        {
+          "strike": 205.0,
+          "net_gamma_exp": 483495.25
+        },
+        {
+          "strike": 207.5,
+          "net_gamma_exp": 66020.33
+        },
+        {
+          "strike": 210.0,
+          "net_gamma_exp": 470730.53
+        },
+        {
+          "strike": 212.5,
+          "net_gamma_exp": 1227.95
+        },
+        {
+          "strike": 215.0,
+          "net_gamma_exp": 205893.24
+        },
+        {
+          "strike": 220.0,
+          "net_gamma_exp": 721717.84
+        }
+      ]
+    },
+    {
+      "ticker": "NEE",
+      "price": 92.88,
+      "gamma_flip": null,
+      "net_gamma": 13024621.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Utilities",
+      "market_cap": 193517502464,
+      "gamma_profile": [
+        {
+          "strike": 79.0,
+          "net_gamma_exp": -2021.82
+        },
+        {
+          "strike": 80.0,
+          "net_gamma_exp": -51917.96
+        },
+        {
+          "strike": 81.0,
+          "net_gamma_exp": -3437.87
+        },
+        {
+          "strike": 82.0,
+          "net_gamma_exp": -6882.93
+        },
+        {
+          "strike": 82.5,
+          "net_gamma_exp": -148246.03
+        },
+        {
+          "strike": 83.0,
+          "net_gamma_exp": -76669.07
+        },
+        {
+          "strike": 84.0,
+          "net_gamma_exp": 685.8499999999999
+        },
+        {
+          "strike": 85.0,
+          "net_gamma_exp": -706313.0599999999
+        },
+        {
+          "strike": 86.0,
+          "net_gamma_exp": -174983.55
+        },
+        {
+          "strike": 87.0,
+          "net_gamma_exp": -149699.75
+        },
+        {
+          "strike": 87.5,
+          "net_gamma_exp": -1790863.05
+        },
+        {
+          "strike": 88.0,
+          "net_gamma_exp": -243177.4
+        },
+        {
+          "strike": 89.0,
+          "net_gamma_exp": -378315.96
+        },
+        {
+          "strike": 90.0,
+          "net_gamma_exp": -90597.44
+        },
+        {
+          "strike": 91.0,
+          "net_gamma_exp": 164407.53
+        },
+        {
+          "strike": 92.0,
+          "net_gamma_exp": 826233.0199999999
+        },
+        {
+          "strike": 92.5,
+          "net_gamma_exp": -405751.03
+        },
+        {
+          "strike": 93.0,
+          "net_gamma_exp": 8504444.74
+        },
+        {
+          "strike": 94.0,
+          "net_gamma_exp": 970033.93
+        },
+        {
+          "strike": 95.0,
+          "net_gamma_exp": 1699453.9100000001
+        },
+        {
+          "strike": 96.0,
+          "net_gamma_exp": 175028.1
+        },
+        {
+          "strike": 97.0,
+          "net_gamma_exp": 161328.06
+        },
+        {
+          "strike": 97.5,
+          "net_gamma_exp": 1288893.56
+        },
+        {
+          "strike": 98.0,
+          "net_gamma_exp": 848920.5
+        },
+        {
+          "strike": 99.0,
+          "net_gamma_exp": 750895.78
+        },
+        {
+          "strike": 100.0,
+          "net_gamma_exp": 1788001.08
+        },
+        {
+          "strike": 101.0,
+          "net_gamma_exp": 23673.36
+        },
+        {
+          "strike": 102.0,
+          "net_gamma_exp": 17434.329999999998
+        },
+        {
+          "strike": 105.0,
+          "net_gamma_exp": 84271.28
+        },
+        {
+          "strike": 106.0,
+          "net_gamma_exp": 3576.3
+        }
+      ]
+    },
+    {
+      "ticker": "DHR",
+      "price": 189.6,
+      "gamma_flip": null,
+      "net_gamma": 2530482.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Healthcare",
+      "market_cap": 134179807232,
+      "gamma_profile": [
+        {
+          "strike": 165.0,
+          "net_gamma_exp": -35336.64
+        },
+        {
+          "strike": 170.0,
+          "net_gamma_exp": -371002.94
+        },
+        {
+          "strike": 172.5,
+          "net_gamma_exp": -16635.96
+        },
+        {
+          "strike": 175.0,
+          "net_gamma_exp": -332929.68
+        },
+        {
+          "strike": 177.5,
+          "net_gamma_exp": -8891.46
+        },
+        {
+          "strike": 180.0,
+          "net_gamma_exp": -1181477.9300000002
+        },
+        {
+          "strike": 182.5,
+          "net_gamma_exp": -223619.19
+        },
+        {
+          "strike": 185.0,
+          "net_gamma_exp": -1848171.19
+        },
+        {
+          "strike": 187.5,
+          "net_gamma_exp": 88149.97
+        },
+        {
+          "strike": 190.0,
+          "net_gamma_exp": -1434154.23
+        },
+        {
+          "strike": 192.5,
+          "net_gamma_exp": 245089.46000000002
+        },
+        {
+          "strike": 195.0,
+          "net_gamma_exp": 489728.31
+        },
+        {
+          "strike": 197.5,
+          "net_gamma_exp": 19828.98
+        },
+        {
+          "strike": 200.0,
+          "net_gamma_exp": 1759086.7999999998
+        },
+        {
+          "strike": 202.5,
+          "net_gamma_exp": 40416.21
+        },
+        {
+          "strike": 205.0,
+          "net_gamma_exp": 117530.75
+        },
+        {
+          "strike": 207.5,
+          "net_gamma_exp": 6399.96
+        },
+        {
+          "strike": 210.0,
+          "net_gamma_exp": 4822680.890000001
+        },
+        {
+          "strike": 215.0,
+          "net_gamma_exp": 39508.2
+        }
+      ]
+    },
+    {
+      "ticker": "PM",
+      "price": 165.34,
+      "gamma_flip": null,
+      "net_gamma": 1016468.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Consumer Defensive",
+      "market_cap": 257687388160,
+      "gamma_profile": [
+        {
+          "strike": 144.0,
+          "net_gamma_exp": -184.6
+        },
+        {
+          "strike": 145.0,
+          "net_gamma_exp": -165748.1
+        },
+        {
+          "strike": 150.0,
+          "net_gamma_exp": -428121.6
+        },
+        {
+          "strike": 152.5,
+          "net_gamma_exp": -7308.1
+        },
+        {
+          "strike": 155.0,
+          "net_gamma_exp": -799183.14
+        },
+        {
+          "strike": 157.5,
+          "net_gamma_exp": -104459.22
+        },
+        {
+          "strike": 160.0,
+          "net_gamma_exp": -997204.4299999999
+        },
+        {
+          "strike": 162.5,
+          "net_gamma_exp": 273511.04
+        },
+        {
+          "strike": 165.0,
+          "net_gamma_exp": -754278.03
+        },
+        {
+          "strike": 167.5,
+          "net_gamma_exp": 391283.98
+        },
+        {
+          "strike": 170.0,
+          "net_gamma_exp": -447623.40999999986
+        },
+        {
+          "strike": 172.5,
+          "net_gamma_exp": 190436.71
+        },
+        {
+          "strike": 175.0,
+          "net_gamma_exp": 1104675.8599999999
+        },
+        {
+          "strike": 177.5,
+          "net_gamma_exp": 38320.479999999996
+        },
+        {
+          "strike": 180.0,
+          "net_gamma_exp": 1568985.8599999999
+        },
+        {
+          "strike": 182.5,
+          "net_gamma_exp": 3310.82
+        },
+        {
+          "strike": 185.0,
+          "net_gamma_exp": 606820.09
+        },
+        {
+          "strike": 190.0,
+          "net_gamma_exp": 227045.2
+        }
+      ]
+    },
+    {
+      "ticker": "UPS",
+      "price": 98.38,
+      "gamma_flip": null,
+      "net_gamma": 16359153.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Industrials",
+      "market_cap": 83590815744,
+      "gamma_profile": [
+        {
+          "strike": 85.0,
+          "net_gamma_exp": -376966.19999999995
+        },
+        {
+          "strike": 86.0,
+          "net_gamma_exp": -69186.8
+        },
+        {
+          "strike": 87.0,
+          "net_gamma_exp": -4415.85
+        },
+        {
+          "strike": 88.0,
+          "net_gamma_exp": -170981.37
+        },
+        {
+          "strike": 89.0,
+          "net_gamma_exp": -31657.510000000002
+        },
+        {
+          "strike": 90.0,
+          "net_gamma_exp": -1752774.3900000001
+        },
+        {
+          "strike": 91.0,
+          "net_gamma_exp": -44246.31
+        },
+        {
+          "strike": 92.0,
+          "net_gamma_exp": -242964.63999999998
+        },
+        {
+          "strike": 93.0,
+          "net_gamma_exp": -30936.109999999997
+        },
+        {
+          "strike": 94.0,
+          "net_gamma_exp": -109636.79
+        },
+        {
+          "strike": 95.0,
+          "net_gamma_exp": -1878870.88
+        },
+        {
+          "strike": 96.0,
+          "net_gamma_exp": -116432.36
+        },
+        {
+          "strike": 97.0,
+          "net_gamma_exp": 2516121.3800000004
+        },
+        {
+          "strike": 98.0,
+          "net_gamma_exp": 1316929.87
+        },
+        {
+          "strike": 99.0,
+          "net_gamma_exp": 853500.78
+        },
+        {
+          "strike": 100.0,
+          "net_gamma_exp": 6349884.2299999995
+        },
+        {
+          "strike": 101.0,
+          "net_gamma_exp": 1373951.48
+        },
+        {
+          "strike": 102.0,
+          "net_gamma_exp": 166243.28
+        },
+        {
+          "strike": 103.0,
+          "net_gamma_exp": 70346.18000000001
+        },
+        {
+          "strike": 104.0,
+          "net_gamma_exp": 362621.50999999995
+        },
+        {
+          "strike": 105.0,
+          "net_gamma_exp": 1807679.7799999998
+        },
+        {
+          "strike": 106.0,
+          "net_gamma_exp": 22207.31
+        },
+        {
+          "strike": 107.0,
+          "net_gamma_exp": 68996.76000000001
+        },
+        {
+          "strike": 108.0,
+          "net_gamma_exp": -4881.569999999999
+        },
+        {
+          "strike": 109.0,
+          "net_gamma_exp": 32008.08
+        },
+        {
+          "strike": 110.0,
+          "net_gamma_exp": 3363322.49
+        },
+        {
+          "strike": 111.0,
+          "net_gamma_exp": 7283.82
+        },
+        {
+          "strike": 112.0,
+          "net_gamma_exp": -20757.699999999997
+        },
+        {
+          "strike": 113.0,
+          "net_gamma_exp": -596.34
+        }
+      ]
+    },
+    {
+      "ticker": "AMGN",
+      "price": 351.85,
+      "gamma_flip": null,
+      "net_gamma": 12083635.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Healthcare",
+      "market_cap": 189670948864,
+      "gamma_profile": [
+        {
+          "strike": 300.0,
+          "net_gamma_exp": -58830.05
+        },
+        {
+          "strike": 305.0,
+          "net_gamma_exp": 2389617.33
+        },
+        {
+          "strike": 310.0,
+          "net_gamma_exp": -583954.08
+        },
+        {
+          "strike": 315.0,
+          "net_gamma_exp": -121765.47
+        },
+        {
+          "strike": 320.0,
+          "net_gamma_exp": -220237.61999999997
+        },
+        {
+          "strike": 325.0,
+          "net_gamma_exp": 124610.57
+        },
+        {
+          "strike": 327.5,
+          "net_gamma_exp": -24230.53
+        },
+        {
+          "strike": 330.0,
+          "net_gamma_exp": -208313.06
+        },
+        {
+          "strike": 335.0,
+          "net_gamma_exp": -119920.81
+        },
+        {
+          "strike": 337.5,
+          "net_gamma_exp": -38778.69
+        },
+        {
+          "strike": 340.0,
+          "net_gamma_exp": -745754.97
+        },
+        {
+          "strike": 342.5,
+          "net_gamma_exp": -37191.36
+        },
+        {
+          "strike": 345.0,
+          "net_gamma_exp": -1230903.82
+        },
+        {
+          "strike": 347.5,
+          "net_gamma_exp": -117796.8
+        },
+        {
+          "strike": 350.0,
+          "net_gamma_exp": -67626.38999999998
+        },
+        {
+          "strike": 352.5,
+          "net_gamma_exp": 551281.4299999999
+        },
+        {
+          "strike": 355.0,
+          "net_gamma_exp": -343759.01999999996
+        },
+        {
+          "strike": 357.5,
+          "net_gamma_exp": 312004.37
+        },
+        {
+          "strike": 360.0,
+          "net_gamma_exp": 838505.8600000001
+        },
+        {
+          "strike": 362.5,
+          "net_gamma_exp": 14622.100000000006
+        },
+        {
+          "strike": 365.0,
+          "net_gamma_exp": 2354257.8899999997
+        },
+        {
+          "strike": 367.5,
+          "net_gamma_exp": 258441.48
+        },
+        {
+          "strike": 370.0,
+          "net_gamma_exp": 1737502.3699999999
+        },
+        {
+          "strike": 372.5,
+          "net_gamma_exp": 82876.41
+        },
+        {
+          "strike": 375.0,
+          "net_gamma_exp": 1949799.95
+        },
+        {
+          "strike": 377.5,
+          "net_gamma_exp": 13646.43
+        },
+        {
+          "strike": 380.0,
+          "net_gamma_exp": 519071.85
+        },
+        {
+          "strike": 385.0,
+          "net_gamma_exp": 876302.29
+        },
+        {
+          "strike": 390.0,
+          "net_gamma_exp": 913015.3200000001
+        },
+        {
+          "strike": 395.0,
+          "net_gamma_exp": 506414.88
+        },
+        {
+          "strike": 400.0,
+          "net_gamma_exp": 517456.44
+        }
+      ]
+    },
+    {
+      "ticker": "HON",
+      "price": 226.03,
+      "gamma_flip": null,
+      "net_gamma": 1076246.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Industrials",
+      "market_cap": 143681781760,
+      "gamma_profile": [
+        {
+          "strike": 195.0,
+          "net_gamma_exp": -168238.19
+        },
+        {
+          "strike": 200.0,
+          "net_gamma_exp": -239165.84999999998
+        },
+        {
+          "strike": 205.0,
+          "net_gamma_exp": -35700.380000000005
+        },
+        {
+          "strike": 210.0,
+          "net_gamma_exp": -1396105.89
+        },
+        {
+          "strike": 212.5,
+          "net_gamma_exp": -9841.69
+        },
+        {
+          "strike": 215.0,
+          "net_gamma_exp": -1694498.7200000002
+        },
+        {
+          "strike": 217.5,
+          "net_gamma_exp": -95156.92
+        },
+        {
+          "strike": 220.0,
+          "net_gamma_exp": -1503700.62
+        },
+        {
+          "strike": 222.5,
+          "net_gamma_exp": 281148.88
+        },
+        {
+          "strike": 225.0,
+          "net_gamma_exp": -526669.27
+        },
+        {
+          "strike": 227.5,
+          "net_gamma_exp": 254289.40000000002
+        },
+        {
+          "strike": 230.0,
+          "net_gamma_exp": 491884.22
+        },
+        {
+          "strike": 232.5,
+          "net_gamma_exp": 320653.34
+        },
+        {
+          "strike": 235.0,
+          "net_gamma_exp": 845815.01
+        },
+        {
+          "strike": 237.5,
+          "net_gamma_exp": 274997.06
+        },
+        {
+          "strike": 240.0,
+          "net_gamma_exp": 3073691.32
+        },
+        {
+          "strike": 242.5,
+          "net_gamma_exp": 100066.15
+        },
+        {
+          "strike": 245.0,
+          "net_gamma_exp": 152489.62
+        },
+        {
+          "strike": 250.0,
+          "net_gamma_exp": 678112.0399999999
+        },
+        {
+          "strike": 255.0,
+          "net_gamma_exp": 11735.65
+        }
+      ]
+    },
+    {
+      "ticker": "SPGI",
+      "price": 425.34,
+      "gamma_flip": null,
+      "net_gamma": 5990816.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Financial Services",
+      "market_cap": 128792952832,
+      "gamma_profile": [
+        {
+          "strike": 370.0,
+          "net_gamma_exp": -761321.78
+        },
+        {
+          "strike": 375.0,
+          "net_gamma_exp": -804.34
+        },
+        {
+          "strike": 380.0,
+          "net_gamma_exp": -597595.71
+        },
+        {
+          "strike": 385.0,
+          "net_gamma_exp": -91887.82
+        },
+        {
+          "strike": 390.0,
+          "net_gamma_exp": -909308.77
+        },
+        {
+          "strike": 400.0,
+          "net_gamma_exp": -1000774.77
+        },
+        {
+          "strike": 405.0,
+          "net_gamma_exp": -136002.28
+        },
+        {
+          "strike": 410.0,
+          "net_gamma_exp": -332433.15
+        },
+        {
+          "strike": 412.5,
+          "net_gamma_exp": 15784.16
+        },
+        {
+          "strike": 415.0,
+          "net_gamma_exp": 32179.97
+        },
+        {
+          "strike": 417.5,
+          "net_gamma_exp": -44119.9
+        },
+        {
+          "strike": 420.0,
+          "net_gamma_exp": -48414.78999999999
+        },
+        {
+          "strike": 425.0,
+          "net_gamma_exp": 135053.0
+        },
+        {
+          "strike": 427.5,
+          "net_gamma_exp": 124334.32
+        },
+        {
+          "strike": 430.0,
+          "net_gamma_exp": 5372435.94
+        },
+        {
+          "strike": 432.5,
+          "net_gamma_exp": 92381.62999999999
+        },
+        {
+          "strike": 435.0,
+          "net_gamma_exp": 137873.5
+        },
+        {
+          "strike": 437.5,
+          "net_gamma_exp": 259200.8
+        },
+        {
+          "strike": 440.0,
+          "net_gamma_exp": 1151865.44
+        },
+        {
+          "strike": 442.5,
+          "net_gamma_exp": 170755.90000000002
+        },
+        {
+          "strike": 445.0,
+          "net_gamma_exp": 808825.52
+        },
+        {
+          "strike": 450.0,
+          "net_gamma_exp": 449779.53
+        },
+        {
+          "strike": 455.0,
+          "net_gamma_exp": 22374.0
+        },
+        {
+          "strike": 460.0,
+          "net_gamma_exp": 232299.51
+        },
+        {
+          "strike": 465.0,
+          "net_gamma_exp": 63604.55
+        },
+        {
+          "strike": 470.0,
+          "net_gamma_exp": 216730.43
+        },
+        {
+          "strike": 480.0,
+          "net_gamma_exp": 145884.46
+        }
+      ]
+    },
+    {
+      "ticker": "CAT",
+      "price": 708.46,
+      "gamma_flip": null,
+      "net_gamma": 12314930.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Industrials",
+      "market_cap": 331544821760,
+      "gamma_profile": [
+        {
+          "strike": 675.0,
+          "net_gamma_exp": -1165971.32
+        },
+        {
+          "strike": 677.5,
+          "net_gamma_exp": -150821.0
+        },
+        {
+          "strike": 680.0,
+          "net_gamma_exp": -2599086.89
+        },
+        {
+          "strike": 682.5,
+          "net_gamma_exp": -84298.65
+        },
+        {
+          "strike": 685.0,
+          "net_gamma_exp": -843543.2100000001
+        },
+        {
+          "strike": 687.5,
+          "net_gamma_exp": -88251.32999999999
+        },
+        {
+          "strike": 690.0,
+          "net_gamma_exp": -1318738.79
+        },
+        {
+          "strike": 695.0,
+          "net_gamma_exp": -458066.54
+        },
+        {
+          "strike": 697.5,
+          "net_gamma_exp": 102038.15
+        },
+        {
+          "strike": 700.0,
+          "net_gamma_exp": 1397421.81
+        },
+        {
+          "strike": 702.5,
+          "net_gamma_exp": 365203.61
+        },
+        {
+          "strike": 705.0,
+          "net_gamma_exp": 709636.53
+        },
+        {
+          "strike": 707.5,
+          "net_gamma_exp": 204804.04
+        },
+        {
+          "strike": 710.0,
+          "net_gamma_exp": 139079.44
+        },
+        {
+          "strike": 712.5,
+          "net_gamma_exp": 919591.4
+        },
+        {
+          "strike": 715.0,
+          "net_gamma_exp": 422985.44
+        },
+        {
+          "strike": 717.5,
+          "net_gamma_exp": -427265.11
+        },
+        {
+          "strike": 720.0,
+          "net_gamma_exp": 2557226.24
+        },
+        {
+          "strike": 722.5,
+          "net_gamma_exp": 554244.09
+        },
+        {
+          "strike": 725.0,
+          "net_gamma_exp": 1374316.78
+        },
+        {
+          "strike": 727.5,
+          "net_gamma_exp": 354680.91
+        },
+        {
+          "strike": 730.0,
+          "net_gamma_exp": 2098052.7
+        },
+        {
+          "strike": 732.5,
+          "net_gamma_exp": 273393.77
+        },
+        {
+          "strike": 735.0,
+          "net_gamma_exp": 636865.46
+        },
+        {
+          "strike": 737.5,
+          "net_gamma_exp": 141571.64
+        },
+        {
+          "strike": 740.0,
+          "net_gamma_exp": 2567829.52
+        },
+        {
+          "strike": 742.5,
+          "net_gamma_exp": 43449.0
+        },
+        {
+          "strike": 745.0,
+          "net_gamma_exp": 242502.58000000002
+        },
+        {
+          "strike": 750.0,
+          "net_gamma_exp": 1798497.1300000001
+        },
+        {
+          "strike": 755.0,
+          "net_gamma_exp": 199728.77
+        },
+        {
+          "strike": 760.0,
+          "net_gamma_exp": 2482204.0
+        },
+        {
+          "strike": 765.0,
+          "net_gamma_exp": 290654.15
+        },
+        {
+          "strike": 770.0,
+          "net_gamma_exp": 1987085.21
+        },
+        {
+          "strike": 775.0,
+          "net_gamma_exp": 105653.16
+        },
+        {
+          "strike": 780.0,
+          "net_gamma_exp": 2000694.0799999996
+        },
+        {
+          "strike": 785.0,
+          "net_gamma_exp": 155761.78999999998
+        },
+        {
+          "strike": 790.0,
+          "net_gamma_exp": 798207.7999999999
+        },
+        {
+          "strike": 795.0,
+          "net_gamma_exp": 7634.47
+        },
+        {
+          "strike": 800.0,
+          "net_gamma_exp": 1310603.63
+        },
+        {
+          "strike": 810.0,
+          "net_gamma_exp": 3782058.42
+        }
+      ]
+    },
+    {
+      "ticker": "IBM",
+      "price": 242.39,
+      "gamma_flip": null,
+      "net_gamma": 5356826.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Technology",
+      "market_cap": 227460972544,
+      "gamma_profile": [
+        {
+          "strike": 210.0,
+          "net_gamma_exp": -637905.03
+        },
+        {
+          "strike": 212.5,
+          "net_gamma_exp": -193.0
+        },
+        {
+          "strike": 215.0,
+          "net_gamma_exp": -445966.14
+        },
+        {
+          "strike": 217.5,
+          "net_gamma_exp": -10245.9
+        },
+        {
+          "strike": 220.0,
+          "net_gamma_exp": -1717988.63
+        },
+        {
+          "strike": 222.5,
+          "net_gamma_exp": -93957.36000000002
+        },
+        {
+          "strike": 225.0,
+          "net_gamma_exp": -1144440.4200000002
+        },
+        {
+          "strike": 227.5,
+          "net_gamma_exp": -105609.48000000001
+        },
+        {
+          "strike": 230.0,
+          "net_gamma_exp": -1472551.7999999998
+        },
+        {
+          "strike": 232.5,
+          "net_gamma_exp": -156739.11
+        },
+        {
+          "strike": 235.0,
+          "net_gamma_exp": -758783.72
+        },
+        {
+          "strike": 237.5,
+          "net_gamma_exp": -382821.95
+        },
+        {
+          "strike": 240.0,
+          "net_gamma_exp": -1145166.19
+        },
+        {
+          "strike": 242.5,
+          "net_gamma_exp": 1202726.31
+        },
+        {
+          "strike": 245.0,
+          "net_gamma_exp": 2187556.39
+        },
+        {
+          "strike": 247.5,
+          "net_gamma_exp": 1013151.84
+        },
+        {
+          "strike": 250.0,
+          "net_gamma_exp": 878208.3699999999
+        },
+        {
+          "strike": 252.5,
+          "net_gamma_exp": 390461.28
+        },
+        {
+          "strike": 255.0,
+          "net_gamma_exp": 1196787.8699999999
+        },
+        {
+          "strike": 257.5,
+          "net_gamma_exp": -10034.629999999997
+        },
+        {
+          "strike": 260.0,
+          "net_gamma_exp": 516862.47000000003
+        },
+        {
+          "strike": 262.5,
+          "net_gamma_exp": 35151.16
+        },
+        {
+          "strike": 265.0,
+          "net_gamma_exp": 635032.63
+        },
+        {
+          "strike": 267.5,
+          "net_gamma_exp": 179387.78
+        },
+        {
+          "strike": 270.0,
+          "net_gamma_exp": 1160579.68
+        },
+        {
+          "strike": 272.5,
+          "net_gamma_exp": 19790.17
+        },
+        {
+          "strike": 275.0,
+          "net_gamma_exp": 2489789.84
+        }
+      ]
+    },
+    {
+      "ticker": "GS",
+      "price": 845.99,
+      "gamma_flip": null,
+      "net_gamma": 33655489.0,
+      "distance_pct": null,
+      "above_flip": null,
+      "sector": "Financial Services",
+      "market_cap": 251050000384,
+      "gamma_profile": [
+        {
+          "strike": 807.5,
+          "net_gamma_exp": -142250.68
+        },
+        {
+          "strike": 810.0,
+          "net_gamma_exp": 94093.5
+        },
+        {
+          "strike": 812.5,
+          "net_gamma_exp": 82796.16
+        },
+        {
+          "strike": 815.0,
+          "net_gamma_exp": -1486334.0599999998
+        },
+        {
+          "strike": 820.0,
+          "net_gamma_exp": 5056.849999999977
+        },
+        {
+          "strike": 825.0,
+          "net_gamma_exp": 1266620.56
+        },
+        {
+          "strike": 830.0,
+          "net_gamma_exp": 2193330.17
+        },
+        {
+          "strike": 832.5,
+          "net_gamma_exp": 511455.08
+        },
+        {
+          "strike": 835.0,
+          "net_gamma_exp": 817032.14
+        },
+        {
+          "strike": 837.5,
+          "net_gamma_exp": 2488085.37
+        },
+        {
+          "strike": 840.0,
+          "net_gamma_exp": 2625962.94
+        },
+        {
+          "strike": 842.5,
+          "net_gamma_exp": 1959838.26
+        },
+        {
+          "strike": 845.0,
+          "net_gamma_exp": 977951.7899999999
+        },
+        {
+          "strike": 847.5,
+          "net_gamma_exp": 327844.26
+        },
+        {
+          "strike": 850.0,
+          "net_gamma_exp": 10350938.690000001
+        },
+        {
+          "strike": 852.5,
+          "net_gamma_exp": 240955.31
+        },
+        {
+          "strike": 855.0,
+          "net_gamma_exp": 1100316.73
+        },
+        {
+          "strike": 860.0,
+          "net_gamma_exp": 4281907.51
+        },
+        {
+          "strike": 865.0,
+          "net_gamma_exp": 1741651.67
+        },
+        {
+          "strike": 870.0,
+          "net_gamma_exp": 3120802.48
+        },
+        {
+          "strike": 875.0,
+          "net_gamma_exp": 176983.86
+        },
+        {
+          "strike": 880.0,
+          "net_gamma_exp": 3499503.96
+        },
+        {
+          "strike": 885.0,
+          "net_gamma_exp": 163624.74
+        },
+        {
+          "strike": 890.0,
+          "net_gamma_exp": 576080.22
+        },
+        {
+          "strike": 895.0,
+          "net_gamma_exp": 954363.04
+        },
+        {
+          "strike": 900.0,
+          "net_gamma_exp": 8081686.35
+        },
+        {
+          "strike": 905.0,
+          "net_gamma_exp": 489968.91
+        },
+        {
+          "strike": 910.0,
+          "net_gamma_exp": 2133550.66
+        },
+        {
+          "strike": 915.0,
+          "net_gamma_exp": 739585.58
+        },
+        {
+          "strike": 920.0,
+          "net_gamma_exp": 1447177.08
+        },
+        {
+          "strike": 925.0,
+          "net_gamma_exp": 572873.24
+        },
+        {
+          "strike": 930.0,
+          "net_gamma_exp": 1735626.21
+        },
+        {
+          "strike": 935.0,
+          "net_gamma_exp": 284022.30000000005
+        },
+        {
+          "strike": 940.0,
+          "net_gamma_exp": 336073.99
+        },
+        {
+          "strike": 945.0,
+          "net_gamma_exp": 639353.63
+        },
+        {
+          "strike": 950.0,
+          "net_gamma_exp": 2597183.36
+        },
+        {
+          "strike": 955.0,
+          "net_gamma_exp": 449503.17000000004
+        },
+        {
+          "strike": 960.0,
+          "net_gamma_exp": 929914.12
+        },
+        {
+          "strike": 965.0,
+          "net_gamma_exp": 119975.05
+        },
+        {
+          "strike": 970.0,
+          "net_gamma_exp": 477479.27999999997
+        }
+      ]
+    }
+  ]
+}
