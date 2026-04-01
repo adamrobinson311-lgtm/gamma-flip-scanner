@@ -22,7 +22,7 @@ jobs:
           cache: 'pip'
 
       - name: Install dependencies
-        run: pip install yfinance pandas numpy scipy
+        run: pip install yfinance pandas numpy scipy lxml requests
 
       - name: Run gamma scanner
         run: |
