@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gamma Flip Scanner — S&P 500</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg:       #080c10;
+    --panel:    #0d1219;
+    --border:   #1a2535;
+    --accent:   #00e5ff;
+    --green:    #00ff88;
+    --red:      #ff3d5a;
+    --yellow:   #ffd700;
+    --dim:      #3a4a5c;
+    --text:     #c8d8e8;
+    --text-dim: #5a7a9a;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-head: 'Bebas Neue', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Grid noise overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(0,229,255,.03) 40px),
+      repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(0,229,255,.03) 40px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── Header ── */
+  header {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(90deg, #080c10 0%, #0a1520 50%, #080c10 100%);
+  }
+
+  .logo {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .logo h1 {
+    font-family: var(--font-head);
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: var(--accent);
+    text-shadow: 0 0 20px rgba(0,229,255,.4);
+  }
+
+  .logo .sub {
+    font-size: 10px;
+    color: var(--text-dim);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .header-stats {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+
+  .hstat {
+    text-align: right;
+  }
+
+  .hstat .label {
+    font-size: 9px;
+    color: var(--text-dim);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .hstat .value {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  /* ── Main layout ── */
+  .main {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 0;
+    height: calc(100vh - 73px);
+  }
+
+  /* ── Controls sidebar ── */
+  .sidebar {
+    grid-row: 1 / 3;
+    border-right: 1px solid var(--border);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar::-webkit-scrollbar { width: 4px; }
+  .sidebar::-webkit-scrollbar-track { background: transparent; }
+  .sidebar::-webkit-scrollbar-thumb { background: var(--dim); border-radius: 2px; }
+
+  .section {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section-title {
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 14px;
+  }
+
+  /* Upload */
+  .upload-zone {
+    border: 1px dashed var(--dim);
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s;
+    position: relative;
+  }
+
+  .upload-zone:hover, .upload-zone.drag-over {
+    border-color: var(--accent);
+    background: rgba(0,229,255,.04);
+  }
+
+  .upload-zone input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+
+  .upload-icon {
+    font-size: 22px;
+    margin-bottom: 6px;
+    color: var(--accent);
+  }
+
+  .upload-text { font-size: 11px; color: var(--text-dim); }
+  .upload-hint { font-size: 10px; color: var(--dim); margin-top: 4px; }
+
+  .btn-demo {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    background: transparent;
+    border: 1px solid var(--dim);
+    border-radius: 3px;
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all .2s;
+  }
+
+  .btn-demo:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(0,229,255,.05);
+  }
+
+  /* Filters */
+  .filter-group { margin-bottom: 14px; }
+
+  .filter-label {
+    font-size: 10px;
+    color: var(--text-dim);
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filter-label span { color: var(--accent); }
+
+  select, input[type=range] {
+    width: 100%;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    padding: 6px 8px;
+    border-radius: 3px;
+    outline: none;
+    -webkit-appearance: none;
+  }
+
+  select:focus { border-color: var(--accent); }
+
+  input[type=range] {
+    padding: 0;
+    height: 4px;
+    border: none;
+    accent-color: var(--accent);
+    cursor: pointer;
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .chip {
+    padding: 3px 10px;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: all .15s;
+    color: var(--text-dim);
+    letter-spacing: .5px;
+    user-select: none;
+  }
+
+  .chip.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(0,229,255,.08);
+  }
+
+  /* Summary stats */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .stat-box {
+    background: rgba(255,255,255,.02);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 10px 12px;
+  }
+
+  .stat-box .s-label {
+    font-size: 9px;
+    color: var(--text-dim);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .stat-box .s-val {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+
+  .stat-box .s-val.green { color: var(--green); }
+  .stat-box .s-val.red   { color: var(--red); }
+  .stat-box .s-val.accent { color: var(--accent); }
+
+  /* ── Top bar (table area) ── */
+  .top-bar {
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--panel);
+  }
+
+  .search-box {
+    flex: 1;
+    position: relative;
+  }
+
+  .search-box input {
+    width: 100%;
+    padding: 7px 12px 7px 30px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    outline: none;
+    transition: border-color .2s;
+  }
+
+  .search-box input:focus { border-color: var(--accent); }
+
+  .search-box::before {
+    content: '⌕';
+    position: absolute;
+    left: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-dim);
+    font-size: 14px;
+  }
+
+  .result-count {
+    font-size: 11px;
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
+
+  /* ── Table ── */
+  .table-area {
+    overflow: auto;
+    position: relative;
+  }
+
+  .table-area::-webkit-scrollbar { width: 5px; height: 5px; }
+  .table-area::-webkit-scrollbar-track { background: transparent; }
+  .table-area::-webkit-scrollbar-thumb { background: var(--dim); border-radius: 2px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+
+  thead th {
+    position: sticky;
+    top: 0;
+    background: #0a1118;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    transition: color .15s;
+    z-index: 5;
+  }
+
+  thead th:hover { color: var(--accent); }
+
+  thead th.sorted { color: var(--accent); }
+  thead th.sorted::after { content: ' ▾'; }
+  thead th.sorted.asc::after { content: ' ▴'; }
+
+  tbody tr {
+    border-bottom: 1px solid rgba(26,37,53,.6);
+    cursor: pointer;
+    transition: background .1s;
+  }
+
+  tbody tr:hover { background: rgba(0,229,255,.04); }
+  tbody tr.selected { background: rgba(0,229,255,.08) !important; }
+
+  td {
+    padding: 9px 14px;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  .ticker-cell {
+    font-weight: 700;
+    font-size: 13px;
+    color: #eef4fa;
+    letter-spacing: .5px;
+  }
+
+  .sector-badge {
+    font-size: 9px;
+    padding: 2px 7px;
+    border-radius: 2px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    letter-spacing: .5px;
+  }
+
+  .price-cell { color: var(--text); font-weight: 500; }
+
+  .flip-cell { color: var(--yellow); }
+
+  .dist-cell { font-weight: 700; }
+  .dist-cell.pos { color: var(--green); }
+  .dist-cell.neg { color: var(--red); }
+
+  .position-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    border-radius: 2px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .position-badge.above {
+    background: rgba(0,255,136,.1);
+    border: 1px solid rgba(0,255,136,.3);
+    color: var(--green);
+  }
+
+  .position-badge.below {
+    background: rgba(255,61,90,.1);
+    border: 1px solid rgba(255,61,90,.3);
+    color: var(--red);
+  }
+
+  .gex-bar-cell { min-width: 130px; }
+
+  .gex-bar-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .gex-bar-bg {
+    flex: 1;
+    height: 6px;
+    background: rgba(255,255,255,.05);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .gex-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width .3s;
+  }
+
+  .gex-value {
+    font-size: 10px;
+    color: var(--text-dim);
+    width: 60px;
+    text-align: right;
+  }
+
+  /* ── Detail panel ── */
+  .detail-panel {
+    position: fixed;
+    right: 0;
+    top: 73px;
+    width: 420px;
+    height: calc(100vh - 73px);
+    background: var(--panel);
+    border-left: 1px solid var(--border);
+    transform: translateX(100%);
+    transition: transform .3s cubic-bezier(.22,.68,0,1.2);
+    z-index: 50;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detail-panel.open { transform: translateX(0); }
+
+  .detail-panel::-webkit-scrollbar { width: 4px; }
+  .detail-panel::-webkit-scrollbar-thumb { background: var(--dim); border-radius: 2px; }
+
+  .detail-header {
+    padding: 20px 24px 14px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .detail-ticker {
+    font-family: var(--font-head);
+    font-size: 36px;
+    color: var(--accent);
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(0,229,255,.3);
+    line-height: 1;
+  }
+
+  .detail-sector {
+    font-size: 10px;
+    color: var(--text-dim);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .close-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .close-btn:hover { border-color: var(--red); color: var(--red); }
+
+  .detail-body { padding: 20px 24px; flex: 1; }
+
+  .detail-metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .dm {
+    background: rgba(255,255,255,.02);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 12px 14px;
+  }
+
+  .dm .d-label {
+    font-size: 9px;
+    color: var(--text-dim);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .dm .d-val {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .dm .d-val.accent { color: var(--accent); }
+  .dm .d-val.yellow { color: var(--yellow); }
+  .dm .d-val.green  { color: var(--green); }
+  .dm .d-val.red    { color: var(--red); }
+
+  .flip-indicator {
+    margin-bottom: 20px;
+    padding: 14px;
+    border-radius: 3px;
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,.02);
+  }
+
+  .flip-gauge-label {
+    font-size: 9px;
+    color: var(--text-dim);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .flip-gauge {
+    position: relative;
+    height: 28px;
+    background: rgba(255,255,255,.04);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .flip-gauge-bar {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-radius: 3px;
+    transition: all .5s;
+  }
+
+  .flip-gauge-line {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--yellow);
+    box-shadow: 0 0 8px var(--yellow);
+    z-index: 2;
+  }
+
+  .flip-gauge-dot {
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    box-shadow: 0 0 10px currentColor;
+  }
+
+  .flip-gauge-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    color: var(--text-dim);
+    margin-top: 5px;
+  }
+
+  /* Chart */
+  .chart-wrap {
+    position: relative;
+    height: 200px;
+    margin-bottom: 0;
+  }
+
+  .chart-title {
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 10px;
+  }
+
+  /* ── Empty state ── */
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 40px;
+    text-align: center;
+    color: var(--text-dim);
+  }
+
+  .empty-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+    opacity: .4;
+  }
+
+  .empty-title {
+    font-family: var(--font-head);
+    font-size: 22px;
+    color: var(--dim);
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+  }
+
+  .empty-sub { font-size: 11px; line-height: 1.7; max-width: 280px; }
+
+  /* ── Loading ── */
+  .loading-bar {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 1.2s infinite;
+    display: none;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  .loading-bar.active { display: block; }
+
+  /* ── Pulse dot ── */
+  .live-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: var(--green);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    box-shadow: 0 0 8px var(--green);
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: .5; transform: scale(.8); }
+  }
+
+  /* ── Animations ── */
+  @keyframes fadeSlideIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  tbody tr {
+    animation: fadeSlideIn .2s ease both;
+  }
+
+  /* ── Toast ── */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--panel);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: all .3s;
+    z-index: 100;
+    pointer-events: none;
+  }
+
+  .toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<!-- ── Header ── -->
+<header>
+  <div class="logo">
+    <h1>GAMMA FLIP</h1>
+    <div>
+      <div class="sub">S&P 500 Options Scanner</div>
+    </div>
+  </div>
+  <div class="header-stats">
+    <div class="hstat">
+      <div class="label">Status</div>
+      <div class="value" style="font-size:12px;display:flex;align-items:center;gap:6px;">
+        <span class="live-dot"></span> LIVE DEMO
+      </div>
+    </div>
+    <div class="hstat">
+      <div class="label">Generated</div>
+      <div class="value" id="gen-time" style="font-size:12px;">—</div>
+    </div>
+    <div class="hstat">
+      <div class="label">SPY</div>
+      <div class="value" id="spy-price">—</div>
+    </div>
+  </div>
+</header>
+
+<div class="loading-bar" id="loading-bar"></div>
+
+<!-- ── Main ── -->
+<div class="main">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+
+    <!-- Data source -->
+    <div class="section">
+      <div class="section-title">Data Source</div>
+      <div class="upload-zone" id="upload-zone">
+        <input type="file" id="file-input" accept=".json">
+        <div class="upload-icon">⬆</div>
+        <div class="upload-text">Drop gamma_results.json here</div>
+        <div class="upload-hint">Output from gamma_scanner.py</div>
+      </div>
+      <button class="btn-demo" onclick="loadDemoData()">⚡ Load Demo Data (50 stocks)</button>
+    </div>
+
+    <!-- Summary -->
+    <div class="section" id="summary-section" style="display:none">
+      <div class="section-title">Summary</div>
+      <div class="stat-grid">
+        <div class="stat-box">
+          <div class="s-label">Total Stocks</div>
+          <div class="s-val accent" id="stat-total">—</div>
+        </div>
+        <div class="stat-box">
+          <div class="s-label">Above Flip</div>
+          <div class="s-val green" id="stat-above">—</div>
+        </div>
+        <div class="stat-box">
+          <div class="s-label">Below Flip</div>
+          <div class="s-val red" id="stat-below">—</div>
+        </div>
+        <div class="stat-box">
+          <div class="s-label">Avg Dist</div>
+          <div class="s-val accent" id="stat-avg-dist">—</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="section">
+      <div class="section-title">Filters</div>
+
+      <div class="filter-group">
+        <div class="filter-label">Position vs Flip</div>
+        <div class="chips" id="pos-filter">
+          <div class="chip active" data-val="all">ALL</div>
+          <div class="chip" data-val="above">ABOVE</div>
+          <div class="chip" data-val="below">BELOW</div>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-label">Max Distance <span id="dist-val">15%</span></div>
+        <input type="range" id="dist-range" min="0" max="30" value="15" step="0.5">
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-label">Sector</div>
+        <select id="sector-select">
+          <option value="all">All Sectors</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-label">Sort By</div>
+        <select id="sort-select">
+          <option value="distance_asc">Distance ↑ (closest flip)</option>
+          <option value="distance_desc">Distance ↓</option>
+          <option value="gex_desc">Net GEX ↓</option>
+          <option value="gex_asc">Net GEX ↑</option>
+          <option value="price_desc">Price ↓</option>
+          <option value="ticker_asc">Ticker A→Z</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Legend -->
+    <div class="section">
+      <div class="section-title">Legend</div>
+      <div style="font-size:10px;color:var(--text-dim);line-height:2">
+        <div><span style="color:var(--yellow)">■</span> Gamma Flip Level — price where dealers switch from long to short gamma</div>
+        <div><span style="color:var(--green)">■</span> Above flip — market in positive gamma regime (stabilizing)</div>
+        <div><span style="color:var(--red)">■</span> Below flip — market in negative gamma regime (amplifying)</div>
+        <div><span style="color:var(--accent)">■</span> GEX bar — relative net gamma exposure magnitude</div>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- Table area -->
+  <div style="display:flex;flex-direction:column;overflow:hidden;">
+
+    <div class="top-bar">
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Search ticker, sector…">
+      </div>
+      <div class="result-count" id="result-count">—</div>
+    </div>
+
+    <div class="table-area" id="table-area">
+      <div class="empty-state" id="empty-state">
+        <div class="empty-icon">◈</div>
+        <div class="empty-title">NO DATA LOADED</div>
+        <div class="empty-sub">Upload your <code>gamma_results.json</code> from the scanner, or click <strong>Load Demo Data</strong> to explore.</div>
+      </div>
+      <table id="main-table" style="display:none">
+        <thead>
+          <tr>
+            <th data-col="ticker">Ticker</th>
+            <th data-col="sector">Sector</th>
+            <th data-col="price">Price</th>
+            <th data-col="gamma_flip">Flip Level</th>
+            <th data-col="distance_pct">Distance</th>
+            <th data-col="above_flip">Position</th>
+            <th data-col="net_gamma">Net GEX</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── Detail panel ── -->
+<div class="detail-panel" id="detail-panel">
+  <div class="detail-header">
+    <div>
+      <div class="detail-ticker" id="d-ticker">—</div>
+      <div class="detail-sector" id="d-sector">—</div>
+    </div>
+    <button class="close-btn" onclick="closeDetail()">✕</button>
+  </div>
+  <div class="detail-body">
+    <div class="detail-metrics">
+      <div class="dm">
+        <div class="d-label">Current Price</div>
+        <div class="d-val accent" id="d-price">—</div>
+      </div>
+      <div class="dm">
+        <div class="d-label">Gamma Flip</div>
+        <div class="d-val yellow" id="d-flip">—</div>
+      </div>
+      <div class="dm">
+        <div class="d-label">Distance</div>
+        <div class="d-val" id="d-dist">—</div>
+      </div>
+      <div class="dm">
+        <div class="d-label">Net GEX</div>
+        <div class="d-val accent" id="d-gex">—</div>
+      </div>
+    </div>
+
+    <div class="flip-indicator">
+      <div class="flip-gauge-label">Price relative to gamma flip</div>
+      <div class="flip-gauge" id="d-gauge">
+        <div class="flip-gauge-bar" id="d-gauge-bar"></div>
+        <div class="flip-gauge-line" id="d-gauge-line"></div>
+        <div class="flip-gauge-dot" id="d-gauge-dot"></div>
+      </div>
+      <div class="flip-gauge-labels">
+        <span id="d-gauge-lo">—</span>
+        <span style="color:var(--yellow)">▲ FLIP</span>
+        <span id="d-gauge-hi">—</span>
+      </div>
+    </div>
+
+    <div class="chart-title">Net Gamma Exposure by Strike</div>
+    <div class="chart-wrap">
+      <canvas id="gex-chart"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- ── Toast ── -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ── State ────────────────────────────────────────────────────────────────────
+let allData = [];
+let filteredData = [];
+let selectedRow = null;
+let gexChart = null;
+
+const $ = id => document.getElementById(id);
+
+// ── Demo data generator ───────────────────────────────────────────────────────
+function generateDemoData() {
+  const tickers = [
+    ["AAPL","Technology"],["MSFT","Technology"],["NVDA","Technology"],
+    ["GOOGL","Communication"],["META","Communication"],["NFLX","Communication"],
+    ["AMZN","Consumer Cyclical"],["TSLA","Consumer Cyclical"],["HD","Consumer Cyclical"],
+    ["JPM","Financial"],["GS","Financial"],["BAC","Financial"],["V","Financial"],
+    ["JNJ","Healthcare"],["UNH","Healthcare"],["LLY","Healthcare"],["ABBV","Healthcare"],
+    ["XOM","Energy"],["CVX","Energy"],["SLB","Energy"],
+    ["PG","Consumer Defensive"],["KO","Consumer Defensive"],["WMT","Consumer Defensive"],
+    ["LIN","Basic Materials"],["FCX","Basic Materials"],
+    ["NEE","Utilities"],["DUK","Utilities"],
+    ["AMT","Real Estate"],["PLD","Real Estate"],
+    ["CAT","Industrials"],["HON","Industrials"],["UPS","Industrials"],
+    ["AVGO","Technology"],["ORCL","Technology"],["CRM","Technology"],["AMD","Technology"],
+    ["MA","Financial"],["SPGI","Financial"],["BLK","Financial"],
+    ["TMO","Healthcare"],["DHR","Healthcare"],["BMY","Healthcare"],
+    ["MCD","Consumer Cyclical"],["NKE","Consumer Cyclical"],
+    ["COST","Consumer Defensive"],["PEP","Consumer Defensive"],
+    ["RTX","Industrials"],["GE","Industrials"],
+    ["INTC","Technology"],["QCOM","Technology"],
+  ];
+
+  const results = tickers.map(([ticker, sector]) => {
+    const price = 50 + Math.random() * 450;
+    const distPct = (Math.random() - 0.45) * 20; // slight upward bias
+    const flip = price / (1 + distPct / 100);
+    const aboveFlip = price > flip;
+
+    // Build a gamma profile around the flip
+    const strikeCount = 30;
+    const lo = flip * 0.88;
+    const hi = flip * 1.12;
+    const step = (hi - lo) / strikeCount;
+    const profile = [];
+    for (let i = 0; i <= strikeCount; i++) {
+      const strike = lo + i * step;
+      // Negative GEX below flip, positive above (typical dealer structure)
+      const dist = (strike - flip) / flip;
+      const gexMag = (1.2e8 + Math.random() * 8e8);
+      const base = dist > 0 ? gexMag * dist * 8 : -gexMag * Math.abs(dist) * 6;
+      const noise = (Math.random() - 0.5) * gexMag * 0.3;
+      profile.push({ strike: parseFloat(strike.toFixed(2)), net_gamma_exp: parseFloat((base + noise).toFixed(0)) });
+    }
+
+    const totalGex = profile.reduce((s, p) => s + p.net_gamma_exp, 0);
+
+    return {
+      ticker,
+      price: parseFloat(price.toFixed(2)),
+      gamma_flip: parseFloat(flip.toFixed(2)),
+      net_gamma: parseFloat(totalGex.toFixed(0)),
+      distance_pct: parseFloat(distPct.toFixed(2)),
+      above_flip: aboveFlip,
+      sector,
+      market_cap: Math.random() * 2e12 + 5e9,
+      gamma_profile: profile,
+    };
+  });
+
+  return {
+    generated: new Date().toISOString().slice(0, 19),
+    spy_price: 524.7 + (Math.random() - 0.5) * 10,
+    total_scanned: 503,
+    successful: results.length,
+    results,
+  };
+}
+
+// ── Data loading ──────────────────────────────────────────────────────────────
+function loadDemoData() {
+  showLoading();
+  setTimeout(() => {
+    const data = generateDemoData();
+    ingestData(data);
+    toast('⚡ Demo data loaded — 50 sample stocks');
+    hideLoading();
+  }, 400);
+}
+
+function ingestData(data) {
+  allData = data.results || [];
+  $('gen-time').textContent = (data.generated || '').replace('T', ' ');
+  $('spy-price').textContent = data.spy_price ? '$' + data.spy_price.toFixed(2) : '—';
+  $('summary-section').style.display = '';
+  populateSectorSelect();
+  applyFilters();
+}
+
+$('file-input').addEventListener('change', e => {
+  const file = e.target.files[0];
+  if (!file) return;
+  showLoading();
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      const data = JSON.parse(ev.target.result);
+      ingestData(data);
+      toast(`✓ Loaded ${data.results?.length || 0} stocks from ${file.name}`);
+    } catch {
+      toast('✗ Invalid JSON file');
+    }
+    hideLoading();
+  };
+  reader.readAsText(file);
+});
+
+// Drag-and-drop
+const uploadZone = $('upload-zone');
+uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('drag-over'); });
+uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('drag-over'));
+uploadZone.addEventListener('drop', e => {
+  e.preventDefault();
+  uploadZone.classList.remove('drag-over');
+  const file = e.dataTransfer.files[0];
+  if (!file) return;
+  const fakeEvt = { target: { files: [file] } };
+  $('file-input').dispatchEvent(new Event('change')); // won't work directly; handle manually
+  showLoading();
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      ingestData(JSON.parse(ev.target.result));
+      toast(`✓ Loaded from ${file.name}`);
+    } catch { toast('✗ Invalid JSON'); }
+    hideLoading();
+  };
+  reader.readAsText(file);
+});
+
+// ── Filters ───────────────────────────────────────────────────────────────────
+function populateSectorSelect() {
+  const sectors = [...new Set(allData.map(d => d.sector || 'Unknown'))].sort();
+  const sel = $('sector-select');
+  sel.innerHTML = '<option value="all">All Sectors</option>';
+  sectors.forEach(s => {
+    const o = document.createElement('option');
+    o.value = s; o.textContent = s;
+    sel.appendChild(o);
+  });
+}
+
+$('dist-range').addEventListener('input', () => {
+  $('dist-val').textContent = $('dist-range').value + '%';
+  applyFilters();
+});
+
+$('sector-select').addEventListener('change', applyFilters);
+$('sort-select').addEventListener('change', applyFilters);
+$('search-input').addEventListener('input', applyFilters);
+
+document.querySelectorAll('#pos-filter .chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('#pos-filter .chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    applyFilters();
+  });
+});
+
+function applyFilters() {
+  const posFilter = document.querySelector('#pos-filter .chip.active')?.dataset.val || 'all';
+  const maxDist = parseFloat($('dist-range').value);
+  const sector = $('sector-select').value;
+  const search = $('search-input').value.toLowerCase();
+  const sortVal = $('sort-select').value;
+
+  let data = [...allData];
+
+  if (posFilter === 'above') data = data.filter(d => d.above_flip === true);
+  if (posFilter === 'below') data = data.filter(d => d.above_flip === false);
+
+  data = data.filter(d => Math.abs(d.distance_pct ?? 999) <= maxDist);
+
+  if (sector !== 'all') data = data.filter(d => d.sector === sector);
+
+  if (search) data = data.filter(d =>
+    d.ticker.toLowerCase().includes(search) ||
+    (d.sector || '').toLowerCase().includes(search)
+  );
+
+  const [sortKey, sortDir] = sortVal.split('_');
+  const keyMap = { distance: 'distance_pct', gex: 'net_gamma', price: 'price', ticker: 'ticker' };
+  const key = keyMap[sortKey] || 'distance_pct';
+  data.sort((a, b) => {
+    const av = Math.abs(a[key] ?? 0), bv = Math.abs(b[key] ?? 0);
+    return sortDir === 'asc' ? av - bv : bv - av;
+  });
+
+  filteredData = data;
+  updateSummary();
+  renderTable();
+}
+
+function updateSummary() {
+  $('stat-total').textContent = allData.length;
+  $('stat-above').textContent = allData.filter(d => d.above_flip).length;
+  $('stat-below').textContent = allData.filter(d => !d.above_flip).length;
+  const avg = allData.reduce((s, d) => s + Math.abs(d.distance_pct ?? 0), 0) / (allData.length || 1);
+  $('stat-avg-dist').textContent = avg.toFixed(1) + '%';
+}
+
+// ── Table rendering ───────────────────────────────────────────────────────────
+function renderTable() {
+  const body = $('table-body');
+  const table = $('main-table');
+  const empty = $('empty-state');
+
+  $('result-count').textContent = `${filteredData.length} results`;
+
+  if (filteredData.length === 0 && allData.length === 0) {
+    empty.style.display = '';
+    table.style.display = 'none';
+    return;
+  }
+
+  empty.style.display = 'none';
+  table.style.display = '';
+
+  const maxGex = Math.max(...filteredData.map(d => Math.abs(d.net_gamma || 0)));
+
+  body.innerHTML = filteredData.map((d, i) => {
+    const dist = d.distance_pct ?? 0;
+    const distStr = (dist >= 0 ? '+' : '') + dist.toFixed(2) + '%';
+    const distClass = dist >= 0 ? 'pos' : 'neg';
+    const posCls = d.above_flip ? 'above' : 'below';
+    const posText = d.above_flip ? '▲ ABOVE' : '▼ BELOW';
+    const gexPct = maxGex > 0 ? Math.abs(d.net_gamma || 0) / maxGex * 100 : 0;
+    const gexColor = d.net_gamma > 0 ? 'var(--green)' : 'var(--red)';
+    const gexStr = formatGex(d.net_gamma);
+    const delay = Math.min(i * 12, 200);
+
+    return `<tr data-idx="${i}" style="animation-delay:${delay}ms">
+      <td class="ticker-cell">${d.ticker}</td>
+      <td><span class="sector-badge">${(d.sector || 'UNK').substring(0, 12)}</span></td>
+      <td class="price-cell">$${(d.price || 0).toFixed(2)}</td>
+      <td class="flip-cell">$${(d.gamma_flip || 0).toFixed(2)}</td>
+      <td class="dist-cell ${distClass}">${distStr}</td>
+      <td><span class="position-badge ${posCls}">${posText}</span></td>
+      <td class="gex-bar-cell">
+        <div class="gex-bar-wrap">
+          <div class="gex-bar-bg">
+            <div class="gex-bar-fill" style="width:${gexPct.toFixed(1)}%;background:${gexColor}"></div>
+          </div>
+          <div class="gex-value">${gexStr}</div>
+        </div>
+      </td>
+    </tr>`;
+  }).join('');
+
+  body.querySelectorAll('tr').forEach(tr => {
+    tr.addEventListener('click', () => {
+      const d = filteredData[parseInt(tr.dataset.idx)];
+      body.querySelectorAll('tr').forEach(r => r.classList.remove('selected'));
+      tr.classList.add('selected');
+      openDetail(d);
+    });
+  });
+}
+
+function formatGex(val) {
+  if (val == null) return '—';
+  const abs = Math.abs(val);
+  const sign = val < 0 ? '-' : '+';
+  if (abs >= 1e9) return sign + (abs / 1e9).toFixed(1) + 'B';
+  if (abs >= 1e6) return sign + (abs / 1e6).toFixed(1) + 'M';
+  if (abs >= 1e3) return sign + (abs / 1e3).toFixed(1) + 'K';
+  return sign + abs.toFixed(0);
+}
+
+// ── Detail panel ──────────────────────────────────────────────────────────────
+function openDetail(d) {
+  $('d-ticker').textContent = d.ticker;
+  $('d-sector').textContent = (d.sector || 'Unknown').toUpperCase();
+  $('d-price').textContent = '$' + (d.price || 0).toFixed(2);
+  $('d-flip').textContent = d.gamma_flip ? '$' + d.gamma_flip.toFixed(2) : 'N/A';
+
+  const dist = d.distance_pct ?? 0;
+  const dEl = $('d-dist');
+  dEl.textContent = (dist >= 0 ? '+' : '') + dist.toFixed(2) + '%';
+  dEl.className = 'd-val ' + (dist >= 0 ? 'green' : 'red');
+
+  $('d-gex').textContent = formatGex(d.net_gamma);
+
+  // Gauge
+  if (d.gamma_flip && d.price) {
+    const lo = Math.min(d.price, d.gamma_flip) * 0.9;
+    const hi = Math.max(d.price, d.gamma_flip) * 1.1;
+    const range = hi - lo;
+    const flipPct = ((d.gamma_flip - lo) / range * 100).toFixed(1);
+    const pricePct = ((d.price - lo) / range * 100).toFixed(1);
+
+    $('d-gauge-line').style.left = flipPct + '%';
+    $('d-gauge-dot').style.left = pricePct + '%';
+
+    const dot = $('d-gauge-dot');
+    const bar = $('d-gauge-bar');
+    if (d.above_flip) {
+      dot.style.background = 'var(--green)';
+      dot.style.color = 'var(--green)';
+      bar.style.left = flipPct + '%';
+      bar.style.width = (pricePct - flipPct) + '%';
+      bar.style.background = 'rgba(0,255,136,.25)';
+    } else {
+      dot.style.background = 'var(--red)';
+      dot.style.color = 'var(--red)';
+      bar.style.left = pricePct + '%';
+      bar.style.width = (flipPct - pricePct) + '%';
+      bar.style.background = 'rgba(255,61,90,.2)';
+    }
+
+    $('d-gauge-lo').textContent = '$' + lo.toFixed(0);
+    $('d-gauge-hi').textContent = '$' + hi.toFixed(0);
+  }
+
+  // Chart
+  renderGexChart(d);
+
+  $('detail-panel').classList.add('open');
+}
+
+function closeDetail() {
+  $('detail-panel').classList.remove('open');
+  $('table-body').querySelectorAll('tr').forEach(r => r.classList.remove('selected'));
+}
+
+function renderGexChart(d) {
+  const ctx = $('gex-chart').getContext('2d');
+  if (gexChart) gexChart.destroy();
+
+  const profile = (d.gamma_profile || []).slice().sort((a, b) => a.strike - b.strike);
+  if (!profile.length) return;
+
+  const labels = profile.map(p => '$' + p.strike.toFixed(0));
+  const values = profile.map(p => p.net_gamma_exp);
+  const colors = values.map(v => v >= 0 ? 'rgba(0,255,136,.7)' : 'rgba(255,61,90,.7)');
+  const borders = values.map(v => v >= 0 ? 'rgba(0,255,136,1)' : 'rgba(255,61,90,1)');
+
+  // Mark flip strike
+  const flipIdx = profile.reduce((best, p, i) =>
+    Math.abs(p.strike - d.gamma_flip) < Math.abs(profile[best].strike - d.gamma_flip) ? i : best, 0);
+
+  gexChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        data: values,
+        backgroundColor: colors,
+        borderColor: borders,
+        borderWidth: 1,
+        borderRadius: 2,
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#0d1219',
+          borderColor: '#1a2535',
+          borderWidth: 1,
+          titleColor: '#c8d8e8',
+          bodyColor: '#5a7a9a',
+          callbacks: {
+            label: ctx => 'GEX: ' + formatGex(ctx.raw),
+          },
+        },
+        annotation: {
+          annotations: {
+            flipLine: {
+              type: 'line',
+              xMin: flipIdx,
+              xMax: flipIdx,
+              borderColor: 'rgba(255,215,0,.8)',
+              borderWidth: 2,
+              borderDash: [4, 3],
+              label: { display: true, content: 'FLIP', color: '#ffd700', font: { size: 9 } },
+            },
+          },
+        },
+      },
+      scales: {
+        x: {
+          ticks: { color: '#3a4a5c', font: { family: "'JetBrains Mono'", size: 9 }, maxTicksLimit: 8 },
+          grid: { color: 'rgba(26,37,53,.5)' },
+        },
+        y: {
+          ticks: { color: '#3a4a5c', font: { family: "'JetBrains Mono'", size: 9 },
+            callback: v => formatGex(v) },
+          grid: { color: 'rgba(26,37,53,.5)' },
+        },
+      },
+    },
+  });
+}
+
+// ── Utilities ────────────────────────────────────────────────────────────────
+function showLoading() { $('loading-bar').classList.add('active'); }
+function hideLoading()  { $('loading-bar').classList.remove('active'); }
+
+function toast(msg) {
+  const el = $('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 2800);
+}
+
+// Close detail on outside click
+document.addEventListener('click', e => {
+  if (!$('detail-panel').contains(e.target) &&
+      !$('table-area').contains(e.target)) {
+    // don't close on sidebar interactions
+  }
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeDetail();
+});
+
+// ── Boot: try real data first, fall back to demo ─────────────────────────────
+window.addEventListener('load', () => {
+  // If hosted (not opened as local file), try to fetch gamma_results.json
+  if (location.protocol !== 'file:') {
+    showLoading();
+    fetch('gamma_results.json?_=' + Date.now())   // cache-bust
+      .then(r => {
+        if (!r.ok) throw new Error('No data file');
+        return r.json();
+      })
+      .then(data => {
+        ingestData(data);
+        toast('✓ Live scan data loaded');
+        hideLoading();
+      })
+      .catch(() => {
+        // gamma_results.json not present yet — show demo
+        loadDemoData();
+      });
+  } else {
+    // Opened as a local file — always use demo
+    loadDemoData();
+  }
+});
+</script>
+</body>
+</html>
