@@ -84,30 +84,52 @@ def compute_gamma_exposure(chain_calls: pd.DataFrame,
                            T: float) -> pd.DataFrame:
     """
     Compute net gamma exposure (GEX) per strike.
-    GEX = gamma * OI * 100 * spot^2 * 0.01
-    Calls add positive GEX; puts subtract.
+
+    Methodology:
+      1. For each strike, get OI and unit gamma for calls and puts
+      2. Unit gamma: use actual gamma from chain if available, else Black-Scholes estimate
+      3. Aggregate GEX weighted by OI:
+           Call GEX =  gamma * OI * spot * 100
+           Put  GEX = -gamma * OI * spot * 100
+           Net  GEX = Call GEX + Put GEX
+      4. Gamma flip = strike where cumulative Net GEX across all strikes crosses zero
     """
+    CONTRACT_SIZE = 100
     rows = []
     all_strikes = sorted(set(chain_calls["strike"]).union(set(chain_puts["strike"])))
+
+    # Use actual gamma from chain if the data source provides it (e.g. Tradier, CBOE)
+    has_call_gamma = "gamma" in chain_calls.columns
+    has_put_gamma  = "gamma" in chain_puts.columns
 
     for K in all_strikes:
         call_row = chain_calls[chain_calls["strike"] == K]
         put_row  = chain_puts[chain_puts["strike"] == K]
 
-        call_iv = float(call_row["impliedVolatility"].values[0]) if not call_row.empty else 0
-        put_iv  = float(put_row["impliedVolatility"].values[0])  if not put_row.empty  else 0
-        call_oi = int(call_row["openInterest"].values[0])        if not call_row.empty else 0
-        put_oi  = int(put_row["openInterest"].values[0])         if not put_row.empty  else 0
+        # Open interest (weighted quantity)
+        call_oi = int(call_row["openInterest"].values[0]) if not call_row.empty else 0
+        put_oi  = int(put_row["openInterest"].values[0])  if not put_row.empty  else 0
 
         if call_oi < MIN_OPEN_INTEREST and put_oi < MIN_OPEN_INTEREST:
             continue
 
-        call_gamma = bs_gamma(spot, K, T, RISK_FREE_RATE, call_iv) if call_oi > 0 and call_iv > 0 else 0
-        put_gamma  = bs_gamma(spot, K, T, RISK_FREE_RATE, put_iv)  if put_oi  > 0 and put_iv  > 0 else 0
+        # Unit gamma: prefer actual Greeks, fall back to Black-Scholes
+        if has_call_gamma and not call_row.empty:
+            call_gamma = float(call_row["gamma"].values[0] or 0)
+        else:
+            call_iv = float(call_row["impliedVolatility"].values[0]) if not call_row.empty else 0
+            call_gamma = bs_gamma(spot, K, T, RISK_FREE_RATE, call_iv) if call_oi > 0 and call_iv > 0 else 0
 
-        # Dollar gamma (per 1% move)
-        dollar_gamma_scale = spot ** 2 * 0.01 * 100
-        net_gex = (call_gamma * call_oi - put_gamma * put_oi) * dollar_gamma_scale
+        if has_put_gamma and not put_row.empty:
+            put_gamma = float(put_row["gamma"].values[0] or 0)
+        else:
+            put_iv = float(put_row["impliedVolatility"].values[0]) if not put_row.empty else 0
+            put_gamma = bs_gamma(spot, K, T, RISK_FREE_RATE, put_iv) if put_oi > 0 and put_iv > 0 else 0
+
+        # GEX = unit_gamma * OI * spot * contract_size
+        call_gex =  call_gamma * call_oi * spot * CONTRACT_SIZE
+        put_gex  = -put_gamma  * put_oi  * spot * CONTRACT_SIZE
+        net_gex  = call_gex + put_gex
 
         rows.append({"strike": K, "net_gamma_exp": round(net_gex, 2)})
 
